@@ -64,9 +64,8 @@ Las páginas HTML **no se editan a mano**: se generan a partir de un único arch
   "cursos": [                       // el orden es el de la portada y el menú
     {
       "id": "2-eso",                // nombre de la página (2-eso.html) y de la carpeta pdf/2-eso/
-      "nombre": "2.º ESO",
+      "nombre": "2.º ESO",          // la casilla de la portada lo parte en número grande ("2.º") y etapa ("ESO")
       "materia": "Física y Química",
-      "simbolo": "2E",              // letras grandes de la casilla
       "etiqueta": "ESO",            // texto pequeño de la casilla en la página del curso
       "color": "eso",               // eso | bach1 | bach2 | fpb (colores definidos en style.css)
       "secciones": [
@@ -93,6 +92,8 @@ Las páginas HTML **no se editan a mano**: se generan a partir de un único arch
 - Cursos especiales: `"proximamente": true` muestra la casilla en gris sin página; un curso con `"enlace"` o `"archivo"`
   a nivel de curso (como FP Básica) no tiene página: la casilla abre directamente ese PDF (`pdf/<curso>/<archivo>`).
 - El número «N materiales» de la portada se calcula solo.
+- Las casillas de la portada muestran el número en grande y la etapa escrita debajo («2.º / Bachillerato»). Jorge
+  pidió quitar los códigos tipo «2B» porque se confundían con grupos (2.º B): no volver a usar abreviaturas así.
 - Todos los PDF de Jorge están ya en `pdf/` (se pasaron desde Google Drive el 2026-10-03). Solo siguen como `"enlace"`
   los recursos externos de otros profesores. Si Jorge da un enlace de Drive suyo, descargar el PDF (con su permiso) y
   usar `"archivo"`.
@@ -101,13 +102,21 @@ Las páginas HTML **no se editan a mano**: se generan a partir de un único arch
 
 1. `git pull` y leer `ESTADO.md` (ver «Continuidad entre ordenadores»).
 2. **Curso.** Buscar en `cursos.json` el curso (`id` tipo `3-eso`). Si no existe, crearlo en su sitio (orden por nivel:
-   ESO → Bachillerato → FP), p. ej. `id "3-eso"`, `nombre "3.º ESO"`, `simbolo "3E"`, `etiqueta "ESO"`, `color "eso"`
+   ESO → Bachillerato → FP), p. ej. `id "3-eso"`, `nombre "3.º ESO"`, `etiqueta "ESO"`, `color "eso"`
    (Bachillerato: `bach1`/`bach2`; FP: `fpb`). Si estaba como `"proximamente"`, quitar esa línea.
 3. **Sección.** Buscar la sección `tema-4`. Si no existe, crearla con `"titulo": "Tema 4: <nombre del tema>"`,
    ordenada entre los demás temas. Si Jorge no dice el nombre del tema, deducirlo del PDF (portada o primer título).
 4. **Archivos.** Copiar los PDF a `pdf/3-eso/tema-4/` con nombres limpios: minúsculas, sin tildes ni espacios,
    con guiones (`ejercicios-fuerzas.pdf`). Comprobar el tamaño: GitHub rechaza archivos de más de 100 MB y avisa a partir
    de 50 MB; si alguno es enorme, avisar a Jorge antes de subirlo.
+   - Sus materiales están en iCloud Drive (`~/Library/Mobile Documents/com~apple~CloudDocs/IES Don Bosco/...`). Si al
+     adjuntarlos sale «Operation not permitted», macOS no deja a Claude leer iCloud: pedirle que copie los PDF en la
+     carpeta del proyecto (o que dé permiso a Claude en Ajustes › Privacidad y seguridad, cosa que debe hacer él).
+     Después moverlos a su carpeta y borrar las copias de la raíz (los originales siguen en iCloud).
+   - Si un PDF mezcla cosas (p. ej. teoría + soluciones), conviene separarlo para que las soluciones vayan aparte, como
+     en 3.º ESO tema 1. Separar con `pypdf`, nunca con PDFKit/Swift (estropea el texto copiable: «Objetvo»). En este
+     Mac (Python 3.9) `pypdf` necesita `typing_extensions`; basta un archivo sustituto con `TypeAlias = Self = Any` y
+     `TypeGuard` subscriptable. Comprobar después que el texto se extrae bien y que se ve igual.
 5. **Materiales.** Añadir una entrada por PDF con `tipo`, `titulo` y `archivo`. Deducir tipo y título del nombre del
    archivo y de su contenido (leer la primera página). Si hay soluciones, ponerlas después de los ejercicios.
 6. `python3 build.py` (debe terminar sin «ERROR») y comprobar en `_site/` que la página queda bien.

@@ -11,7 +11,6 @@
       "id": "2-eso",
       "nombre": "2.º ESO",
       "materia": "Física y Química",
-      "simbolo": "2E",
       "etiqueta": "ESO",
       "color": "eso",
       "secciones": [
@@ -39,10 +38,28 @@
       ]
     },
     {
+      "id": "3-eso",
+      "nombre": "3.º ESO",
+      "materia": "Física y Química",
+      "etiqueta": "ESO",
+      "color": "eso",
+      "secciones": [
+        {
+          "id": "tema-1",
+          "titulo": "Tema 1: La actividad científica",
+          "materiales": [
+            { "tipo": "Apuntes", "titulo": "Medida y errores", "archivo": "apuntes-medida-y-errores.pdf" },
+            { "tipo": "Ejercicios", "titulo": "Medida y errores", "archivo": "ejercicios-medida-y-errores.pdf" },
+            { "tipo": "Práctica", "titulo": "Laboratorio: medida de volúmenes con probetas", "archivo": "practica-volumenes-con-probetas.pdf" },
+            { "tipo": "Soluciones", "titulo": "Ejercicios y práctica de medida y errores", "archivo": "soluciones-medida-y-errores.pdf" }
+          ]
+        }
+      ]
+    },
+    {
       "id": "1-bachillerato",
       "nombre": "1.º Bachillerato",
       "materia": "Física y Química",
-      "simbolo": "1B",
       "etiqueta": "Bach",
       "color": "bach1",
       "proximamente": true,
@@ -52,7 +69,6 @@
       "id": "2-bachillerato",
       "nombre": "2.º Bachillerato",
       "materia": "Física",
-      "simbolo": "2B",
       "etiqueta": "Bach",
       "color": "bach2",
       "secciones": [
@@ -103,7 +119,6 @@
       "id": "fp-basica",
       "nombre": "FP Básica",
       "materia": "Ciencias Aplicadas I",
-      "simbolo": "CA",
       "etiqueta": "FPB",
       "color": "fpb",
       "archivo": "libro-ciencias-aplicadas-1.pdf",

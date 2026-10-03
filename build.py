@@ -44,6 +44,12 @@ def tiene_pagina(curso):
     return not curso.get("proximamente") and not (curso.get("enlace") or curso.get("archivo"))
 
 
+def numero_y_etapa(curso):
+    """"2.º Bachillerato" -> ("2.º", "Bachillerato"); "FP Básica" -> ("FP", "Básica")."""
+    partes = curso["nombre"].split(" ", 1)
+    return partes[0], (partes[1] if len(partes) > 1 else "")
+
+
 def contar(curso):
     return sum(len(s["materiales"]) for s in curso["secciones"] if not s.get("externos"))
 
@@ -97,8 +103,10 @@ def pagina(sitio, cursos, titulo, actual, cuerpo):
 # ---------- Portada ----------
 
 def casilla(curso):
-    pie = '<span class="pie"><span class="nom">%s</span><br><span class="sub">%s</span></span>' % (
-        e(curso["nombre"]), e(curso["materia"]))
+    numero, etapa = numero_y_etapa(curso)
+    nombre = '<span class="nombre"><span class="num">%s</span><span class="etapa">%s</span></span>' % (
+        e(numero), e(etapa))
+    pie = '<span class="pie"><span class="sub">%s</span></span>' % e(curso["materia"])
     if curso.get("proximamente"):
         abre, cierra, n = '<div class="el %s off">' % e(curso["color"]), "</div>", "Próximamente"
     else:
@@ -116,9 +124,9 @@ def casilla(curso):
         abre, cierra = '<a class="el %s" href="%s"%s>' % (e(curso["color"]), href, extra), "</a>"
     return """    {abre}
       <span class="n">{n}</span>
-      <span class="sim">{sim}</span>
+      {nombre}
       {pie}
-    {cierra}""".format(abre=abre, n=e(n), sim=e(curso["simbolo"]), pie=pie, cierra=cierra)
+    {cierra}""".format(abre=abre, n=e(n), nombre=nombre, pie=pie, cierra=cierra)
 
 
 def portada(sitio, cursos):
@@ -172,7 +180,7 @@ def pagina_curso(sitio, cursos, curso):
     <div><h1>{nombre}</h1><p>{materia}</p></div>
   </div>
 {bloques}
-</main>""".format(color=e(curso["color"]), etiqueta=e(curso["etiqueta"]), sim=e(curso["simbolo"]),
+</main>""".format(color=e(curso["color"]), etiqueta=e(curso["etiqueta"]), sim=e(numero_y_etapa(curso)[0]),
                   nombre=e(curso["nombre"]), materia=e(curso["materia"]),
                   bloques="\n".join(bloque(curso, s) for s in curso["secciones"]))
     titulo = "%s | %s" % (curso["nombre"], sitio["titulo"])
@@ -184,7 +192,7 @@ def pagina_curso(sitio, cursos, curso):
 def comprobar(datos):
     ids = set()
     for c in datos["cursos"]:
-        for campo in ("id", "nombre", "materia", "simbolo", "etiqueta", "color", "secciones"):
+        for campo in ("id", "nombre", "materia", "etiqueta", "color", "secciones"):
             if campo not in c:
                 raise ErrorDatos('Al curso "%s" le falta el campo "%s"' % (c.get("id", "?"), campo))
         if c["id"] in ids or c["id"] == "index":
