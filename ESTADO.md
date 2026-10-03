@@ -7,6 +7,7 @@ Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pas
 ## Estado actual
 - Web publicada en https://jorperviz-debug.github.io/apuntes/ (repositorio público `jorperviz-debug/apuntes`).
 - Las páginas se generan desde `cursos.json` con `build.py`; GitHub las publica solo en cada push a `main`.
+- Ejercicios de campo gravitatorio (2.º Bach) actualizados a la versión 2 el 2026-10-03; los de campo electromagnético siguen con «Sin actualizar».
 - Cursos: 2.º ESO (3 materiales), 3.º ESO (4, tema 1), 1.º Bachillerato (próximamente), 2.º Bachillerato (8),
   FP Básica (la casilla abre directamente su PDF).
 - Casillas de la portada con número grande + etapa («2.º / Bachillerato»); ya no hay códigos tipo «2B».

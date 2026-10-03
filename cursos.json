@@ -77,7 +77,7 @@
           "titulo": "Apuntes y ejercicios de la asignatura",
           "materiales": [
             { "tipo": "Apuntes", "titulo": "Campo gravitatorio", "archivo": "apuntes-campo-gravitatorio.pdf" },
-            { "tipo": "Ejercicios", "titulo": "Campo gravitatorio", "nota": "Sin actualizar", "archivo": "ejercicios-campo-gravitatorio.pdf" },
+            { "tipo": "Ejercicios", "titulo": "Campo gravitatorio", "archivo": "ejercicios-campo-gravitatorio.pdf" },
             { "tipo": "Apuntes", "titulo": "Campo electromagnético", "archivo": "apuntes-campo-electromagnetico.pdf" },
             { "tipo": "Ejercicios", "titulo": "Campo electromagnético", "nota": "Sin actualizar", "archivo": "ejercicios-campo-electromagnetico.pdf" }
           ]

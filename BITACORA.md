@@ -15,3 +15,7 @@
 ## 2026-10-03 — MacBook Air de Jorge
 - Hecho: preparada (sin aplicar) una propuesta de diseño alternativo; Jorge la descartó por demasiado parecida.
 - A medias: rediseño aparcado (quiere algo totalmente distinto cuando lo retome); falta preparar el segundo Mac.
+
+## 2026-10-03 — MacBook Air de Jorge
+- Hecho: sustituidos los ejercicios de campo gravitatorio de 2.º Bach por la versión 2 (corregida a partir del ejercicio 13) y quitada la nota «Sin actualizar».
+- A medias: rediseño aparcado; falta preparar el segundo Mac.
