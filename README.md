@@ -6,5 +6,6 @@ Web de apuntes de Jorge Pérez Vizcaíno (IES Don Bosco, Albacete).
 - `pdf/<curso>/<tema>/`: PDF guardados en la propia web.
 - `build.py`: genera las páginas a partir de `cursos.json`. GitHub lo ejecuta solo al subir cambios.
 - `style.css`: colores y diseño.
+- `ESTADO.md` y `BITACORA.md`: en qué punto está el trabajo (para seguir desde otro ordenador).
 
 Más detalles en [CLAUDE.md](CLAUDE.md).
