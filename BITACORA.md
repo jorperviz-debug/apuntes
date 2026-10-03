@@ -11,3 +11,7 @@
 ## 2026-10-03 — MacBook Air de Jorge
 - Hecho: creado 3.º ESO con «Tema 1: La actividad científica»; los dos PDF de Jorge (medida y errores) se han separado en cuatro (apuntes, ejercicios, práctica de laboratorio y soluciones). Casillas de la portada rediseñadas: número grande + etapa en lugar de «2B», «2E»…
 - A medias: falta preparar el segundo Mac. macOS no deja a Claude leer iCloud Drive; de momento Jorge copia los PDF a la carpeta del proyecto.
+
+## 2026-10-03 — MacBook Air de Jorge
+- Hecho: preparada (sin aplicar) una propuesta de diseño alternativo; Jorge la descartó por demasiado parecida.
+- A medias: rediseño aparcado (quiere algo totalmente distinto cuando lo retome); falta preparar el segundo Mac.

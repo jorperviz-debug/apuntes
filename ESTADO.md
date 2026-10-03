@@ -19,6 +19,11 @@ Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pas
 - Opcional: Jorge puede dar permiso a Claude para leer iCloud Drive (Ajustes › Privacidad y seguridad) y así no
   tener que copiar los PDF a mano.
 
+- Rediseño de la web (aparcado por Jorge): quiere ver una propuesta **totalmente distinta** (colores, disposición…),
+  no retoques del diseño actual. La primera propuesta («Cuaderno de laboratorio»: mismas casillas con otra letra y
+  fondo cuadriculado) no le convenció por parecerse demasiado. Enseñar siempre como vista previa, sin aplicar hasta
+  que diga «aplícalo».
+
 ## Siguiente paso
 Preparar el segundo Mac siguiendo «Primer uso en otro Mac» de CLAUDE.md.
 
