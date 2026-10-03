@@ -19,21 +19,21 @@
           "id": "apuntes-y-ejercicios",
           "titulo": "Apuntes y ejercicios",
           "materiales": [
-            { "tipo": "Apuntes", "titulo": "Temas 1, 2 y 3 (primer trimestre)", "enlace": "https://drive.google.com/file/d/1ug8CxdSFMLALpHIfy6rxc5RLYQkZ0ZCy/view?usp=share_link" }
+            { "tipo": "Apuntes", "titulo": "Temas 1, 2 y 3 (primer trimestre)", "archivo": "apuntes-temas-1-2-3.pdf" }
           ]
         },
         {
           "id": "recuperacion-1",
           "titulo": "Recuperación 1.ª evaluación",
           "materiales": [
-            { "tipo": "Ejercicios", "titulo": "Ejercicios de recuperación de la primera evaluación", "enlace": "https://drive.google.com/file/d/1NlZX8ZB4WL1gMEKKXW09mNL3DZJRMdbM/view?usp=share_link" }
+            { "tipo": "Ejercicios", "titulo": "Ejercicios de recuperación de la primera evaluación", "archivo": "ejercicios-recuperacion-1.pdf" }
           ]
         },
         {
           "id": "recuperacion-2",
           "titulo": "Recuperación 2.ª evaluación",
           "materiales": [
-            { "tipo": "Ejercicios", "titulo": "Ejercicios de recuperación de la segunda evaluación", "enlace": "https://drive.google.com/file/d/1BwHkx5f_oCBrbdYJ-CG4GhIqQESpBBS5/view?usp=share_link" }
+            { "tipo": "Ejercicios", "titulo": "Ejercicios de recuperación de la segunda evaluación", "archivo": "ejercicios-recuperacion-2.pdf" }
           ]
         }
       ]
@@ -60,20 +60,20 @@
           "id": "apuntes-y-ejercicios",
           "titulo": "Apuntes y ejercicios de la asignatura",
           "materiales": [
-            { "tipo": "Apuntes", "titulo": "Campo gravitatorio", "enlace": "https://drive.google.com/file/d/1VpAD0jh4vOVObi9wp_REsj-9yDMIU2HK/view?usp=sharing" },
-            { "tipo": "Ejercicios", "titulo": "Campo gravitatorio", "nota": "Sin actualizar", "enlace": "https://drive.google.com/file/d/1lbzYM_PJLNngsFoxm3gsEB3vKvC6tGn7/view?usp=sharing" },
-            { "tipo": "Apuntes", "titulo": "Campo electromagnético", "enlace": "https://drive.google.com/file/d/1n3n9ac33g6uygwJUw06q0BLiGBRWm-0X/view?usp=sharing" },
-            { "tipo": "Ejercicios", "titulo": "Campo electromagnético", "nota": "Sin actualizar", "enlace": "https://drive.google.com/file/d/18W9OnTvbrJrnCEiZSwIuZCQOTCnHBqCG/view?usp=sharing" }
+            { "tipo": "Apuntes", "titulo": "Campo gravitatorio", "archivo": "apuntes-campo-gravitatorio.pdf" },
+            { "tipo": "Ejercicios", "titulo": "Campo gravitatorio", "nota": "Sin actualizar", "archivo": "ejercicios-campo-gravitatorio.pdf" },
+            { "tipo": "Apuntes", "titulo": "Campo electromagnético", "archivo": "apuntes-campo-electromagnetico.pdf" },
+            { "tipo": "Ejercicios", "titulo": "Campo electromagnético", "nota": "Sin actualizar", "archivo": "ejercicios-campo-electromagnetico.pdf" }
           ]
         },
         {
           "id": "tema-0",
           "titulo": "Tema 0: Introducción a la Física de 2.º de Bachillerato",
           "materiales": [
-            { "tipo": "Formulario", "titulo": "Formulario de Física de 1.º de Bachillerato", "enlace": "https://drive.google.com/file/d/1sEuTpc5HqBqzX8Y0YKX8OS-dxv3JwnBF/view?usp=share_link" },
-            { "tipo": "Presentación", "titulo": "Vectores", "enlace": "https://drive.google.com/file/d/1loiypdxADGd8vOAiXqgdXOmzqfqMAzHE/view?usp=share_link" },
-            { "tipo": "Ejercicios", "titulo": "Vectores", "enlace": "https://drive.google.com/file/d/1Mfijg2NEJyheR0pRH-KCpIJfJ5LgrxAn/view?usp=share_link" },
-            { "tipo": "Soluciones", "titulo": "Ejercicios de vectores", "enlace": "https://drive.google.com/file/d/1XftuclWpo6F5KH_YFOU3LA6MkUsKJATn/view?usp=share_link" }
+            { "tipo": "Formulario", "titulo": "Formulario de Física de 1.º de Bachillerato", "archivo": "formulario-fisica-1-bachillerato.pdf" },
+            { "tipo": "Presentación", "titulo": "Vectores", "archivo": "presentacion-vectores.pdf" },
+            { "tipo": "Ejercicios", "titulo": "Vectores", "archivo": "ejercicios-vectores.pdf" },
+            { "tipo": "Soluciones", "titulo": "Ejercicios de vectores", "archivo": "soluciones-vectores.pdf" }
           ]
         },
         {
@@ -106,7 +106,7 @@
       "simbolo": "CA",
       "etiqueta": "FPB",
       "color": "fpb",
-      "enlace": "https://drive.google.com/file/d/1bRXezvtY_xuSFbFZzQLj_rCxN0jZp3hH/view?usp=sharing",
+      "archivo": "libro-ciencias-aplicadas-1.pdf",
       "texto_casilla": "Apuntes (PDF)",
       "secciones": []
     }

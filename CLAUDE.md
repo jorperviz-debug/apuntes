@@ -93,8 +93,9 @@ Las páginas HTML **no se editan a mano**: se generan a partir de un único arch
 - Cursos especiales: `"proximamente": true` muestra la casilla en gris sin página; un curso con `"enlace"` o `"archivo"`
   a nivel de curso (como FP Básica) no tiene página: la casilla abre directamente ese PDF (`pdf/<curso>/<archivo>`).
 - El número «N materiales» de la portada se calcula solo.
-- Los materiales que ya existían están enlazados a Google Drive. Para pasar uno al proyecto: guardar el PDF en su carpeta
-  y cambiar `"enlace"` por `"archivo"`.
+- Todos los PDF de Jorge están ya en `pdf/` (se pasaron desde Google Drive el 2026-10-03). Solo siguen como `"enlace"`
+  los recursos externos de otros profesores. Si Jorge da un enlace de Drive suyo, descargar el PDF (con su permiso) y
+  usar `"archivo"`.
 
 ## Receta: «sube estos PDF a 3.º ESO, tema 4»
 

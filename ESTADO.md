@@ -8,11 +8,11 @@ Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pas
 - Web publicada en https://jorperviz-debug.github.io/apuntes/ (repositorio público `jorperviz-debug/apuntes`).
 - Las páginas se generan desde `cursos.json` con `build.py`; GitHub las publica solo en cada push a `main`.
 - Cursos: 2.º ESO (3 materiales), 2.º Bachillerato (8), 1.º Bachillerato (próximamente), FP Básica (un PDF de Drive).
-- Todos los materiales siguen enlazados a Google Drive; las carpetas `pdf/<curso>/<tema>/` están creadas y vacías.
+- Los 12 PDF de Jorge están alojados en la web (`pdf/<curso>/<tema>/`, 33,6 MB en total); ya no dependen de Google Drive.
+  Solo los 3 recursos de otros profesores (2.º Bach, «Otros resúmenes y formularios») siguen siendo enlaces externos.
 
 ## Pendiente
 - Preparar el segundo Mac (descargar la web desde GitHub, instalar `gh` e iniciar sesión).
-- Ir pasando los PDF de Google Drive a `pdf/` cuando Jorge los vaya dando.
 
 ## Siguiente paso
 Preparar el segundo Mac siguiendo «Primer uso en otro Mac» de CLAUDE.md.
