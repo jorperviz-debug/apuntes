@@ -1,5 +1,5 @@
 # Estado del proyecto
-Última actualización: 2026-10-03 — Mac: MacBook Air de Jorge
+Última actualización: 2026-10-15 — Mac: MacBook Air de Jorge
 
 ## Objetivo general
 Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pasando poco a poco los PDF de Google Drive al propio proyecto.
@@ -8,7 +8,7 @@ Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pas
 - Web publicada en https://jorperviz-debug.github.io/apuntes/ (repositorio público `jorperviz-debug/apuntes`).
 - Las páginas se generan desde `cursos.json` con `build.py`; GitHub las publica solo en cada push a `main`.
 - Ejercicios de campo gravitatorio (2.º Bach) actualizados a la versión 2 el 2026-10-03; los de campo electromagnético siguen con «Sin actualizar».
-- Cursos: 2.º ESO (3 materiales), 3.º ESO (4, tema 1), 1.º Bachillerato (próximamente), 2.º Bachillerato (8),
+- Cursos: 2.º ESO (3 materiales), 3.º ESO (4, tema 1), 1.º Bachillerato (próximamente), 2.º Bachillerato (9; el tema 1 ya tiene un ejemplo de examen PAU),
   FP Básica (la casilla abre directamente su PDF).
 - Casillas de la portada con número grande + etapa («2.º / Bachillerato»); ya no hay códigos tipo «2B».
 - Los 12 PDF de Jorge están alojados en la web (`pdf/<curso>/<tema>/`, 33,6 MB en total); ya no dependen de Google Drive.

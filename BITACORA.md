@@ -19,3 +19,7 @@
 ## 2026-10-03 — MacBook Air de Jorge
 - Hecho: sustituidos los ejercicios de campo gravitatorio de 2.º Bach por la versión 2 (corregida a partir del ejercicio 13) y quitada la nota «Sin actualizar».
 - A medias: rediseño aparcado; falta preparar el segundo Mac.
+
+## 2026-10-15 — MacBook Air de Jorge
+- Hecho: añadido a 2.º Bach, tema 1, el ejemplo de examen PAU 2025 de Galicia (solo la pregunta 1 es de gravitación; se indica en una nota).
+- A medias: rediseño aparcado; falta preparar el segundo Mac. iCloud sigue bloqueado para Claude (Jorge copia los PDF a mano).

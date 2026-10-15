@@ -95,7 +95,9 @@
         {
           "id": "tema-1",
           "titulo": "Tema 1: Campo gravitatorio. Materiales adicionales",
-          "materiales": []
+          "materiales": [
+            { "tipo": "Examen", "titulo": "Ejemplo de examen PAU 2025 (Galicia)", "nota": "Gravitación: pregunta 1", "archivo": "examen-pau-2025-galicia.pdf" }
+          ]
         },
         {
           "id": "repaso",
