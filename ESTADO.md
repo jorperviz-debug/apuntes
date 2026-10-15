@@ -24,6 +24,10 @@ Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pas
   no retoques del diseño actual. La primera propuesta («Cuaderno de laboratorio»: mismas casillas con otra letra y
   fondo cuadriculado) no le convenció por parecerse demasiado. Enseñar siempre como vista previa, sin aplicar hasta
   que diga «aplícalo».
+- Páginas de curso (2026-10-15): a Jorge no le gusta cómo se ven por dentro («todo mezclado»); quiere secciones
+  claramente separadas, incluso por colores. Propuesta probada y descartada («algo mejor, pero no suficiente»): índice
+  de botones de colores + cada sección como bloque con cabecera de color + materiales como fichas en columnas.
+  Si se retoma, ir más allá de eso.
 
 ## Siguiente paso
 Preparar el segundo Mac siguiendo «Primer uso en otro Mac» de CLAUDE.md.

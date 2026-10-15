@@ -23,3 +23,7 @@
 ## 2026-10-15 — MacBook Air de Jorge
 - Hecho: añadido a 2.º Bach, tema 1, el ejemplo de examen PAU 2025 de Galicia (solo la pregunta 1 es de gravitación; se indica en una nota).
 - A medias: rediseño aparcado; falta preparar el segundo Mac. iCloud sigue bloqueado para Claude (Jorge copia los PDF a mano).
+
+## 2026-10-15 — MacBook Air de Jorge
+- Hecho: propuesta (sin aplicar) de páginas de curso con secciones de colores y fichas; Jorge la descartó por insuficiente. La web sigue como estaba.
+- A medias: rediseño de portada y de páginas de curso aparcado; falta preparar el segundo Mac.
