@@ -12,6 +12,8 @@ Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pas
   FP Básica (la casilla abre directamente su PDF).
 - Páginas de curso rediseñadas el 2026-10-16 (aprobado por Jorge): 3 colores, índice lateral, secciones numeradas.
   Se descartaron antes una versión con un color por sección («parece una feria») y otra con fichas de colores.
+- Bloques de las páginas de curso alternando dos colores suaves (curso + verde/violeta). Portada: un color por
+  curso (3.º ESO estrena terracota); se probaron y descartaron degradados violeta, verde y amarillo.
 - Casillas de la portada con número grande + etapa («2.º / Bachillerato»); ya no hay códigos tipo «2B».
 - Los 12 PDF de Jorge están alojados en la web (`pdf/<curso>/<tema>/`, 33,6 MB en total); ya no dependen de Google Drive.
   Solo los 3 recursos de otros profesores (2.º Bach, «Otros resúmenes y formularios») siguen siendo enlaces externos.

@@ -31,3 +31,7 @@
 ## 2026-10-16 — MacBook Air de Jorge
 - Hecho: nuevo diseño de las páginas de curso, aprobado por Jorge («así sí»): solo 3 colores, banda de cabecera, índice lateral fijo, secciones numeradas con fondos alternos y materiales en filas. La portada no cambia.
 - A medias: rediseño de la portada sigue aparcado; falta preparar el segundo Mac.
+
+## 2026-10-16 — MacBook Air de Jorge
+- Hecho: bloques de las páginas de curso alternando dos colores suaves; 3.º ESO con color propio (terracota) para que cada curso de la portada tenga un color distinto. Probados y descartados degradados en la portada (violeta, verde, amarillo).
+- A medias: falta preparar el segundo Mac.

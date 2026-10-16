@@ -67,7 +67,7 @@ Las páginas HTML **no se editan a mano**: se generan a partir de un único arch
       "nombre": "2.º ESO",          // la casilla de la portada lo parte en número grande ("2.º") y etapa ("ESO")
       "materia": "Física y Química",
       "etiqueta": "ESO",            // ya no se muestra (se puede omitir)
-      "color": "eso",               // eso | bach1 | bach2 | fpb (colores definidos en style.css)
+      "color": "eso",               // eso | eso3 | bach1 | bach2 | fpb (colores en style.css); uno distinto por curso
       "secciones": [
         {
           "id": "tema-4",           // nombre de la carpeta pdf/2-eso/tema-4/
@@ -98,7 +98,10 @@ Las páginas HTML **no se editan a mano**: se generan a partir de un único arch
   acento— porque Jorge no quiere que «parezca una feria». Banda de color con nombre y resumen, índice lateral fijo
   con las secciones numeradas (en móvil, botones con los números), cada sección en un bloque numerado (01, 02…) con
   fondos alternos, materiales en filas (tipo · título · «PDF» o «Web ↗») y recursos externos con borde discontinuo.
+  Los bloques alternan el color del curso y un segundo color (verde; violeta en 2.º ESO), muy suaves.
   No añadir más colores por sección ni por tipo de material.
+- **Portada:** cada curso con un color distinto (Jorge lo pidió así; descartó degradados en violeta, verde y amarillo).
+  Un curso nuevo necesita su propio color: añadirlo en `:root` (claro y oscuro) y como clase en `style.css`.
 - Todos los PDF de Jorge están ya en `pdf/` (se pasaron desde Google Drive el 2026-10-03). Solo siguen como `"enlace"`
   los recursos externos de otros profesores. Si Jorge da un enlace de Drive suyo, descargar el PDF (con su permiso) y
   usar `"archivo"`.
@@ -107,8 +110,8 @@ Las páginas HTML **no se editan a mano**: se generan a partir de un único arch
 
 1. `git pull` y leer `ESTADO.md` (ver «Continuidad entre ordenadores»).
 2. **Curso.** Buscar en `cursos.json` el curso (`id` tipo `3-eso`). Si no existe, crearlo en su sitio (orden por nivel:
-   ESO → Bachillerato → FP), p. ej. `id "3-eso"`, `nombre "3.º ESO"`, `etiqueta "ESO"`, `color "eso"`
-   (Bachillerato: `bach1`/`bach2`; FP: `fpb`). Si estaba como `"proximamente"`, quitar esa línea.
+   ESO → Bachillerato → FP), p. ej. `id "4-eso"`, `nombre "4.º ESO"` y un `color` nuevo que no use otro curso
+   (ver «Portada» arriba). Si estaba como `"proximamente"`, quitar esa línea.
 3. **Sección.** Buscar la sección `tema-4`. Si no existe, crearla con `"titulo": "Tema 4: <nombre del tema>"`,
    ordenada entre los demás temas. Si Jorge no dice el nombre del tema, deducirlo del PDF (portada o primer título).
 4. **Archivos.** Copiar los PDF a `pdf/3-eso/tema-4/` con nombres limpios: minúsculas, sin tildes ni espacios,

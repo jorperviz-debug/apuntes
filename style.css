@@ -6,6 +6,7 @@
   --card: #FFFFFF;
   --line: #D5DBE3;
   --eso: #1F8A70;
+  --eso3: #C0502F;
   --bach1: #B87A0B;
   --bach2: #3F51B5;
   --fpb: #A23E7B;
@@ -15,7 +16,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --ink: #E6EAF2; --ink-soft: #A3ADC2; --paper: #121826; --card: #1A2234; --line: #2C3650;
-    --eso: #4CC3A2; --bach1: #E2AD4A; --bach2: #8C9BFF; --fpb: #E07AB8;
+    --eso: #4CC3A2; --eso3: #F08A6E; --bach1: #E2AD4A; --bach2: #8C9BFF; --fpb: #E07AB8;
   }
 }
 
@@ -61,7 +62,7 @@ a.el:hover { transform: translateY(-3px); box-shadow: 0 6px 0 color-mix(in srgb,
 .el .nom { font-weight: 700; font-size: 1.1rem; }
 .el .sub { font-size: .85rem; color: var(--ink-soft); line-height: 1.3; }
 .el.off { border-style: dashed; opacity: .75; }
-.eso { --c: var(--eso); } .bach1 { --c: var(--bach1); } .bach2 { --c: var(--bach2); } .fpb { --c: var(--fpb); }
+.eso { --c: var(--eso); } .eso3 { --c: var(--eso3); } .bach1 { --c: var(--bach1); } .bach2 { --c: var(--bach2); } .fpb { --c: var(--fpb); }
 
 /* ===== Páginas de curso ===== */
 .curso { display: flex; gap: 1.5rem; align-items: center; padding: 3rem 0 1rem; }
@@ -164,5 +165,17 @@ main.pag-curso .tipo { font-size: .78rem; font-weight: 700; text-transform: uppe
   .pag-curso .lista a { grid-template-columns: 1fr auto; gap: .2rem .75rem; }
   .pag-curso .lista a .tipo { grid-column: 1 / -1; }
 }
-main.pag-curso.eso { --a: var(--eso); } main.pag-curso.bach1 { --a: var(--bach1); }
+main.pag-curso.eso { --a: var(--eso); } main.pag-curso.eso3 { --a: var(--eso3); } main.pag-curso.bach1 { --a: var(--bach1); }
 main.pag-curso.bach2 { --a: var(--bach2); } main.pag-curso.fpb { --a: var(--fpb); }
+
+/* Páginas de curso: bloques alternando el color del curso y un segundo color, ambos muy suaves */
+main.pag-curso { --b: var(--eso); }
+main.pag-curso.eso { --b: var(--bach2); }
+.pag-curso .bloque:nth-child(odd), .pag-curso .bloque:nth-child(even) {
+  background: color-mix(in srgb, var(--a) 7%, var(--paper));
+  border: 2px solid color-mix(in srgb, var(--a) 22%, transparent);
+}
+.pag-curso .bloque:nth-child(even) { --a: var(--b); }
+.pag-curso .bloque.externos { background: var(--paper); border-style: dashed; }
+.pag-curso .indice li:nth-child(even) .num { color: var(--b); }
+.pag-curso .indice li:nth-child(even) a:hover { border-left-color: var(--b); color: var(--b); }
