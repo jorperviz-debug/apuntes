@@ -1,5 +1,5 @@
 # Estado del proyecto
-Última actualización: 2026-10-15 — Mac: MacBook Air de Jorge
+Última actualización: 2026-10-16 — Mac: MacBook Air de Jorge
 
 ## Objetivo general
 Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pasando poco a poco los PDF de Google Drive al propio proyecto.
@@ -10,6 +10,8 @@ Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pas
 - Ejercicios de campo gravitatorio (2.º Bach) actualizados a la versión 2 el 2026-10-03; los de campo electromagnético siguen con «Sin actualizar».
 - Cursos: 2.º ESO (3 materiales), 3.º ESO (4, tema 1), 1.º Bachillerato (próximamente), 2.º Bachillerato (9; el tema 1 ya tiene un ejemplo de examen PAU),
   FP Básica (la casilla abre directamente su PDF).
+- Páginas de curso rediseñadas el 2026-10-16 (aprobado por Jorge): 3 colores, índice lateral, secciones numeradas.
+  Se descartaron antes una versión con un color por sección («parece una feria») y otra con fichas de colores.
 - Casillas de la portada con número grande + etapa («2.º / Bachillerato»); ya no hay códigos tipo «2B».
 - Los 12 PDF de Jorge están alojados en la web (`pdf/<curso>/<tema>/`, 33,6 MB en total); ya no dependen de Google Drive.
   Solo los 3 recursos de otros profesores (2.º Bach, «Otros resúmenes y formularios») siguen siendo enlaces externos.
@@ -24,10 +26,6 @@ Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pas
   no retoques del diseño actual. La primera propuesta («Cuaderno de laboratorio»: mismas casillas con otra letra y
   fondo cuadriculado) no le convenció por parecerse demasiado. Enseñar siempre como vista previa, sin aplicar hasta
   que diga «aplícalo».
-- Páginas de curso (2026-10-15): a Jorge no le gusta cómo se ven por dentro («todo mezclado»); quiere secciones
-  claramente separadas, incluso por colores. Propuesta probada y descartada («algo mejor, pero no suficiente»): índice
-  de botones de colores + cada sección como bloque con cabecera de color + materiales como fichas en columnas.
-  Si se retoma, ir más allá de eso.
 
 ## Siguiente paso
 Preparar el segundo Mac siguiendo «Primer uso en otro Mac» de CLAUDE.md.

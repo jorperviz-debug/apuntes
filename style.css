@@ -105,3 +105,64 @@ footer { border-top: 1px solid var(--line); margin-top: 3rem; padding: 1.75rem 0
 footer p { margin: .15rem 0; }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* ===== Propuesta: páginas de curso con 3 colores (fondo, texto y acento del curso) ===== */
+.banda { --a: var(--c); background: var(--a); color: var(--paper); padding: 2.25rem 0 2rem; }
+.banda .miga { margin: 0 0 .6rem; font-size: .9rem; opacity: .85; }
+.banda .miga a { color: inherit; }
+.banda h1 { font: 800 clamp(2.2rem, 6vw, 3.6rem)/1.05 var(--display); margin: 0; letter-spacing: -.02em; }
+.banda .resumen { margin: .5rem 0 0; font-weight: 700; opacity: .9; }
+
+main.pag-curso { --a: var(--c); display: grid; grid-template-columns: 15rem 1fr; gap: 2.5rem; align-items: start; padding-top: 2rem; }
+.pag-curso .indice { position: sticky; top: 1.25rem; }
+.pag-curso .indice p { margin: 0 0 .6rem; font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--a); }
+.pag-curso .indice ol { list-style: none; margin: 0; padding: 0; border-left: 2px solid color-mix(in srgb, var(--ink) 15%, transparent); }
+.pag-curso .indice a {
+  display: flex; gap: .6rem; padding: .45rem .75rem; margin-left: -2px; border-left: 2px solid transparent;
+  text-decoration: none; font-size: .92rem; line-height: 1.35; color: var(--ink);
+}
+.pag-curso .indice a:hover { border-left-color: var(--a); color: var(--a); }
+.pag-curso .indice .num { font-weight: 700; color: var(--a); font-variant-numeric: tabular-nums; }
+
+.pag-curso .bloque { padding: 1.75rem 1.5rem 1.5rem; margin: 0 0 1.25rem; border-radius: 12px; scroll-margin-top: 1rem; background: var(--paper); border: 2px solid color-mix(in srgb, var(--ink) 12%, transparent); }
+.pag-curso .bloque:nth-child(even) { background: color-mix(in srgb, var(--a) 7%, var(--paper)); border-color: transparent; }
+.pag-curso .bloque.externos { border-style: dashed; background: var(--paper); }
+.pag-curso .cab { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 1rem; }
+.pag-curso .cab .num { font: 800 2.6rem/1 var(--display); color: var(--a); font-variant-numeric: tabular-nums; }
+.pag-curso .cab h2 { font: 700 1.35rem/1.25 var(--display); margin: .15rem 0 0; }
+.pag-curso .cuenta { margin: .25rem 0 0; font-size: .85rem; color: var(--ink-soft); }
+.pag-curso .desc { margin: -.25rem 0 1rem; color: var(--ink-soft); }
+
+.pag-curso .lista { list-style: none; margin: 0; padding: 0; border: 0; display: grid; gap: .5rem; }
+.pag-curso .lista li { border: 0; }
+.pag-curso .lista a {
+  display: grid; grid-template-columns: 7.5rem 1fr auto; gap: 1rem; align-items: center;
+  padding: .8rem 1rem; border-radius: 8px; text-decoration: none;
+  background: var(--card); border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+  transition: border-color .15s ease, transform .15s ease;
+}
+.pag-curso .lista a:hover { border-color: var(--a); transform: translateX(3px); background: var(--card); }
+.pag-curso .lista a:hover .t { text-decoration: underline; text-underline-offset: 3px; }
+main.pag-curso .tipo { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--a); }
+.pag-curso .t { font-weight: 700; }
+.pag-curso .nota { display: inline-block; margin-left: .4rem; font-size: .75rem; font-weight: 700; color: var(--ink-soft); white-space: nowrap; }
+.pag-curso .nota::before { content: "· "; }
+.pag-curso .marca { font-size: .75rem; font-weight: 700; color: var(--a); border: 1.5px solid var(--a); border-radius: 4px; padding: .1rem .4rem; white-space: nowrap; }
+.pag-curso .pend { margin: 0; padding: 1rem; border-radius: 8px; border: 1.5px dashed color-mix(in srgb, var(--ink) 20%, transparent); color: var(--ink-soft); font-style: italic; }
+@media (prefers-color-scheme: dark) { .banda { color: #10172A; } }
+
+@media (max-width: 52rem) {
+  main.pag-curso { grid-template-columns: 1fr; gap: 1rem; }
+  .pag-curso .indice { position: static; }
+  .pag-curso .indice ol { display: flex; flex-wrap: wrap; gap: .4rem; border: 0; }
+  .pag-curso .indice a { margin: 0; border: 1.5px solid color-mix(in srgb, var(--ink) 15%, transparent); border-radius: 999px; padding: .3rem .7rem; font-size: .85rem; }
+  .pag-curso .indice .tt { display: none; }
+}
+@media (max-width: 34rem) {
+  .pag-curso .bloque { padding: 1.25rem 1rem 1rem; }
+  .pag-curso .cab .num { font-size: 2rem; }
+  .pag-curso .lista a { grid-template-columns: 1fr auto; gap: .2rem .75rem; }
+  .pag-curso .lista a .tipo { grid-column: 1 / -1; }
+}
+main.pag-curso.eso { --a: var(--eso); } main.pag-curso.bach1 { --a: var(--bach1); }
+main.pag-curso.bach2 { --a: var(--bach2); } main.pag-curso.fpb { --a: var(--fpb); }

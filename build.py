@@ -148,41 +148,66 @@ def portada(sitio, cursos):
 
 def fila(curso, seccion, m):
     if m.get("archivo"):
-        href = ruta_pdf(curso["id"], seccion["id"], m["archivo"])
+        href, clase, marca = ruta_pdf(curso["id"], seccion["id"], m["archivo"]), "pdf", "PDF"
     elif m.get("enlace"):
-        href = e(m["enlace"])
+        href, clase, marca = e(m["enlace"]), "web", "Web ↗"
     else:
         raise ErrorDatos('El material "%s" (%s, %s) no tiene "enlace" ni "archivo"'
                          % (m.get("titulo"), curso["id"], seccion["id"]))
-    nota = '<span class="nota">%s</span>' % e(m["nota"]) if m.get("nota") else "<span></span>"
-    return ('      <li><a href="%s" target="_blank" rel="noopener"><span class="tipo">%s</span>'
-            '<span class="t">%s</span>%s</a></li>' % (href, e(m["tipo"]), e(m["titulo"]), nota))
+    nota = ' <span class="nota">%s</span>' % e(m["nota"]) if m.get("nota") else ""
+    return ('        <li><a class="%s" href="%s" target="_blank" rel="noopener"><span class="tipo">%s</span>'
+            '<span class="t">%s%s</span><span class="marca">%s</span></a></li>'
+            % (clase, href, e(m["tipo"]), e(m["titulo"]), nota, marca))
 
 
-def bloque(curso, seccion):
-    lineas = ['  <section class="bloque">', "    <h2>%s</h2>" % e(seccion["titulo"])]
+def cuenta(seccion):
+    n = len(seccion["materiales"])
+    return ("%d %s" % (n, "material" if n == 1 else "materiales")) if n else "En construcción"
+
+
+def bloque(curso, seccion, numero):
+    lineas = ['    <section class="bloque%s" id="%s">' % (" externos" if seccion.get("externos") else "", e(seccion["id"])),
+              '      <div class="cab"><span class="num">%02d</span><div><h2>%s</h2><p class="cuenta">%s%s</p></div></div>'
+              % (numero, e(seccion["titulo"]), "Recursos de otras webs · " if seccion.get("externos") else "", cuenta(seccion))]
     if seccion.get("descripcion"):
-        lineas.append("    <p>%s</p>" % e(seccion["descripcion"]))
-    lineas.append('    <ul class="lista">')
+        lineas.append('      <p class="desc">%s</p>' % e(seccion["descripcion"]))
     if seccion["materiales"]:
+        lineas.append('      <ul class="lista">')
         lineas += [fila(curso, seccion, m) for m in seccion["materiales"]]
+        lineas.append("      </ul>")
     else:
-        lineas.append('      <li><span class="pend"><span class="tipo">Pendiente</span>'
-                      '<span>En construcción</span><span></span></span></li>')
-    lineas += ["    </ul>", "  </section>"]
+        lineas.append('      <p class="pend">Todavía no hay materiales en esta sección.</p>')
+    lineas.append("    </section>")
     return "\n".join(lineas)
 
 
 def pagina_curso(sitio, cursos, curso):
-    cuerpo = """<main class="wrap {color}">
-  <div class="curso">
-    <div class="el {color}" aria-hidden="true"><span class="n">{etiqueta}</span><span class="sim">{sim}</span><span></span></div>
-    <div><h1>{nombre}</h1><p>{materia}</p></div>
+    secciones = curso["secciones"]
+    indice = "\n".join('        <li><a href="#%s"><span class="num">%02d</span><span class="tt">%s</span></a></li>' % (e(s["id"]), i, e(s["titulo"]))
+                       for i, s in enumerate(secciones, 1))
+    total = contar(curso)
+    cuerpo = """<div class="banda {color}">
+  <div class="wrap">
+    <p class="miga"><a href="index.html">Inicio</a> / {nombre}</p>
+    <h1>{nombre}</h1>
+    <p class="resumen">{materia} · {total} materiales · {nsec} secciones</p>
   </div>
+</div>
+<main class="wrap pag-curso {color}">
+  <aside class="indice">
+    <nav aria-label="Secciones">
+      <p>Contenido</p>
+      <ol>
+{indice}
+      </ol>
+    </nav>
+  </aside>
+  <div class="contenido">
 {bloques}
-</main>""".format(color=e(curso["color"]), etiqueta=e(curso["etiqueta"]), sim=e(numero_y_etapa(curso)[0]),
-                  nombre=e(curso["nombre"]), materia=e(curso["materia"]),
-                  bloques="\n".join(bloque(curso, s) for s in curso["secciones"]))
+  </div>
+</main>""".format(color=e(curso["color"]), nombre=e(curso["nombre"]), materia=e(curso["materia"]), total=total,
+                  nsec=len(secciones), indice=indice,
+                  bloques="\n".join(bloque(curso, s, i) for i, s in enumerate(secciones, 1)))
     titulo = "%s | %s" % (curso["nombre"], sitio["titulo"])
     return pagina(sitio, cursos, titulo, curso["id"], cuerpo)
 
@@ -192,7 +217,7 @@ def pagina_curso(sitio, cursos, curso):
 def comprobar(datos):
     ids = set()
     for c in datos["cursos"]:
-        for campo in ("id", "nombre", "materia", "etiqueta", "color", "secciones"):
+        for campo in ("id", "nombre", "materia", "color", "secciones"):
             if campo not in c:
                 raise ErrorDatos('Al curso "%s" le falta el campo "%s"' % (c.get("id", "?"), campo))
         if c["id"] in ids or c["id"] == "index":

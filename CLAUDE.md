@@ -66,7 +66,7 @@ Las páginas HTML **no se editan a mano**: se generan a partir de un único arch
       "id": "2-eso",                // nombre de la página (2-eso.html) y de la carpeta pdf/2-eso/
       "nombre": "2.º ESO",          // la casilla de la portada lo parte en número grande ("2.º") y etapa ("ESO")
       "materia": "Física y Química",
-      "etiqueta": "ESO",            // texto pequeño de la casilla en la página del curso
+      "etiqueta": "ESO",            // ya no se muestra (se puede omitir)
       "color": "eso",               // eso | bach1 | bach2 | fpb (colores definidos en style.css)
       "secciones": [
         {
@@ -94,6 +94,11 @@ Las páginas HTML **no se editan a mano**: se generan a partir de un único arch
 - El número «N materiales» de la portada se calcula solo.
 - Las casillas de la portada muestran el número en grande y la etapa escrita debajo («2.º / Bachillerato»). Jorge
   pidió quitar los códigos tipo «2B» porque se confundían con grupos (2.º B): no volver a usar abreviaturas así.
+- **Páginas de curso (diseño aprobado el 2026-10-16):** solo 3 colores —fondo, texto y el color del curso como único
+  acento— porque Jorge no quiere que «parezca una feria». Banda de color con nombre y resumen, índice lateral fijo
+  con las secciones numeradas (en móvil, botones con los números), cada sección en un bloque numerado (01, 02…) con
+  fondos alternos, materiales en filas (tipo · título · «PDF» o «Web ↗») y recursos externos con borde discontinuo.
+  No añadir más colores por sección ni por tipo de material.
 - Todos los PDF de Jorge están ya en `pdf/` (se pasaron desde Google Drive el 2026-10-03). Solo siguen como `"enlace"`
   los recursos externos de otros profesores. Si Jorge da un enlace de Drive suyo, descargar el PDF (con su permiso) y
   usar `"archivo"`.

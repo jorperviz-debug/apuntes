@@ -27,3 +27,7 @@
 ## 2026-10-15 — MacBook Air de Jorge
 - Hecho: propuesta (sin aplicar) de páginas de curso con secciones de colores y fichas; Jorge la descartó por insuficiente. La web sigue como estaba.
 - A medias: rediseño de portada y de páginas de curso aparcado; falta preparar el segundo Mac.
+
+## 2026-10-16 — MacBook Air de Jorge
+- Hecho: nuevo diseño de las páginas de curso, aprobado por Jorge («así sí»): solo 3 colores, banda de cabecera, índice lateral fijo, secciones numeradas con fondos alternos y materiales en filas. La portada no cambia.
+- A medias: rediseño de la portada sigue aparcado; falta preparar el segundo Mac.
