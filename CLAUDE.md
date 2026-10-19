@@ -54,7 +54,7 @@ Las páginas HTML **no se editan a mano**: se generan a partir de un único arch
 | `style.css` | Diseño. No cambiarlo salvo que Jorge lo pida. |
 | `.github/workflows/pages.yml` | Al hacer `git push` a `main`, GitHub ejecuta `build.py` y publica `_site/` en GitHub Pages (1–2 minutos). |
 
-`_site/` está en `.gitignore`: nunca se sube. Para ver el resultado en local: `python3 build.py` y abrir `_site/index.html`.
+`_site/` y `privado/` están en `.gitignore`: nunca se suben. Para ver el resultado en local: `python3 build.py` y abrir `_site/index.html`.
 
 ## Formato de `cursos.json`
 
@@ -87,6 +87,12 @@ Las páginas HTML **no se editan a mano**: se generan a partir de un único arch
 
 - Cada material lleva `"archivo"` (PDF dentro de `pdf/<curso>/<seccion>/`) **o** `"enlace"` (URL externa, p. ej. Google Drive).
 - `"nota"` es opcional (texto pequeño a la derecha).
+- `"oculto": true` → el material **no se publica** ni cuenta en «N materiales» (p. ej. soluciones que Jorge activará
+  más tarde). Su PDF **no va en `pdf/`** sino en `privado/<curso>/<seccion>/`, que está en `.gitignore`: el repositorio
+  es público y un PDF subido se podría encontrar aunque no salga en la web. Ese PDF solo existe en el Mac donde se
+  guardó; si hay que activarlo desde el otro Mac, pedirle a Jorge que lo vuelva a pasar.
+  **Activar** («activa las soluciones de…»): mover el PDF de `privado/…` a `pdf/…` (misma ruta), quitar
+  `"oculto": true` de su entrada, `python3 build.py`, commit, push y comprobar.
 - Una sección con `"materiales": []` muestra «Pendiente · En construcción».
 - Tipos usados: Apuntes, Ejercicios, Soluciones, Presentación, Formulario, Guías, Resúmenes. Se puede usar otro (Examen, Práctica…).
 - Cursos especiales: `"proximamente": true` muestra la casilla en gris sin página; un curso con `"enlace"` o `"archivo"`

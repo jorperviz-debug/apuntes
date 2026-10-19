@@ -35,3 +35,7 @@
 ## 2026-10-16 — MacBook Air de Jorge
 - Hecho: bloques de las páginas de curso alternando dos colores suaves; 3.º ESO con color propio (terracota) para que cada curso de la portada tenga un color distinto. Probados y descartados degradados en la portada (violeta, verde, amarillo).
 - A medias: falta preparar el segundo Mac.
+
+## 2026-10-19 — MacBook Air de Jorge
+- Hecho: 2.º Bach, tema 1: boletín de problemas PAU para clase, boletín para casa y sus soluciones. Las soluciones del boletín de clase quedan ocultas (nueva opción `"oculto": true`; PDF en `privado/`, fuera de GitHub).
+- A medias: activar esas soluciones cuando Jorge lo diga; preparar el segundo Mac.

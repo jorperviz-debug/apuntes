@@ -96,6 +96,10 @@
           "id": "tema-1",
           "titulo": "Tema 1: Campo gravitatorio. Materiales adicionales",
           "materiales": [
+            { "tipo": "Ejercicios", "titulo": "Problemas tipo PAU", "nota": "Para clase", "archivo": "problemas-pau-clase.pdf" },
+            { "tipo": "Soluciones", "titulo": "Problemas tipo PAU", "nota": "Para clase", "archivo": "soluciones-problemas-pau-clase.pdf", "oculto": true },
+            { "tipo": "Ejercicios", "titulo": "Problemas tipo PAU", "nota": "Para casa", "archivo": "problemas-pau-casa.pdf" },
+            { "tipo": "Soluciones", "titulo": "Problemas tipo PAU", "nota": "Para casa", "archivo": "soluciones-problemas-pau-casa.pdf" },
             { "tipo": "Examen", "titulo": "Ejemplo de examen PAU 2025 (Galicia)", "nota": "Gravitación: pregunta 1", "archivo": "examen-pau-2025-galicia.pdf" }
           ]
         },

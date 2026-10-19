@@ -1,5 +1,5 @@
 # Estado del proyecto
-Última actualización: 2026-10-16 — Mac: MacBook Air de Jorge
+Última actualización: 2026-10-19 — Mac: MacBook Air de Jorge
 
 ## Objetivo general
 Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pasando poco a poco los PDF de Google Drive al propio proyecto.
@@ -8,7 +8,7 @@ Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pas
 - Web publicada en https://jorperviz-debug.github.io/apuntes/ (repositorio público `jorperviz-debug/apuntes`).
 - Las páginas se generan desde `cursos.json` con `build.py`; GitHub las publica solo en cada push a `main`.
 - Ejercicios de campo gravitatorio (2.º Bach) actualizados a la versión 2 el 2026-10-03; los de campo electromagnético siguen con «Sin actualizar».
-- Cursos: 2.º ESO (3 materiales), 3.º ESO (4, tema 1), 1.º Bachillerato (próximamente), 2.º Bachillerato (9; el tema 1 ya tiene un ejemplo de examen PAU),
+- Cursos: 2.º ESO (3 materiales), 3.º ESO (4, tema 1), 1.º Bachillerato (próximamente), 2.º Bachillerato (12 visibles; tema 1: problemas PAU de clase y de casa, soluciones de casa y examen PAU),
   FP Básica (la casilla abre directamente su PDF).
 - Páginas de curso rediseñadas el 2026-10-16 (aprobado por Jorge): 3 colores, índice lateral, secciones numeradas.
   Se descartaron antes una versión con un color por sección («parece una feria») y otra con fichas de colores.
@@ -19,6 +19,8 @@ Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pas
   Solo los 3 recursos de otros profesores (2.º Bach, «Otros resúmenes y formularios») siguen siendo enlaces externos.
 
 ## Pendiente
+- **Soluciones OCULTAS** de «Problemas tipo PAU · Para clase» (2.º Bach, tema 1): esperan a que Jorge diga «actívalas».
+  El PDF está SOLO en este MacBook Air, en `privado/2-bachillerato/tema-1/` (no está en GitHub).
 - Preparar el segundo Mac (descargar la web desde GitHub, instalar `gh` e iniciar sesión).
 
 - Opcional: Jorge puede dar permiso a Claude para leer iCloud Drive (Ajustes › Privacidad y seguridad) y así no

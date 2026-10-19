@@ -50,8 +50,13 @@ def numero_y_etapa(curso):
     return partes[0], (partes[1] if len(partes) > 1 else "")
 
 
+def visibles(seccion):
+    """Materiales que se publican: los que tienen "oculto": true se saltan (su PDF está en privado/)."""
+    return [m for m in seccion["materiales"] if not m.get("oculto")]
+
+
 def contar(curso):
-    return sum(len(s["materiales"]) for s in curso["secciones"] if not s.get("externos"))
+    return sum(len(visibles(s)) for s in curso["secciones"] if not s.get("externos"))
 
 
 # ---------- Plantilla común ----------
@@ -161,7 +166,7 @@ def fila(curso, seccion, m):
 
 
 def cuenta(seccion):
-    n = len(seccion["materiales"])
+    n = len(visibles(seccion))
     return ("%d %s" % (n, "material" if n == 1 else "materiales")) if n else "En construcción"
 
 
@@ -171,9 +176,9 @@ def bloque(curso, seccion, numero):
               % (numero, e(seccion["titulo"]), "Recursos de otras webs · " if seccion.get("externos") else "", cuenta(seccion))]
     if seccion.get("descripcion"):
         lineas.append('      <p class="desc">%s</p>' % e(seccion["descripcion"]))
-    if seccion["materiales"]:
+    if visibles(seccion):
         lineas.append('      <ul class="lista">')
-        lineas += [fila(curso, seccion, m) for m in seccion["materiales"]]
+        lineas += [fila(curso, seccion, m) for m in visibles(seccion)]
         lineas.append("      </ul>")
     else:
         lineas.append('      <p class="pend">Todavía no hay materiales en esta sección.</p>')
