@@ -83,6 +83,17 @@
           ]
         },
         {
+          "id": "otros-recursos",
+          "titulo": "Otros resúmenes y formularios",
+          "descripcion": "Recursos de otros profesores.",
+          "externos": true,
+          "materiales": [
+            { "tipo": "Guías", "titulo": "Aprendiendo Física con Berto Tomás", "enlace": "https://aprendiendofisicac.wixsite.com/my-site/gu%C3%ADas" },
+            { "tipo": "Apuntes", "titulo": "Fisiquímicamente: apuntes de Física de 2.º de Bachillerato", "enlace": "https://fisiquimicamente.com/recursos-fisica-quimica/apuntes/2bach/fisica/" },
+            { "tipo": "Resúmenes", "titulo": "Las chuletillas de Curro", "enlace": "https://drive.google.com/drive/folders/1OXSG4JKxRwPvIL4U-4N1LtcOyt4LIMmQ" }
+          ]
+        },
+        {
           "id": "tema-0",
           "titulo": "Tema 0: Introducción a la Física de 2.º de Bachillerato",
           "materiales": [
@@ -107,17 +118,6 @@
           "titulo": "Ejercicios y cuestiones de repaso de toda la asignatura",
           "oculto": true,
           "materiales": []
-        },
-        {
-          "id": "otros-recursos",
-          "titulo": "Otros resúmenes y formularios",
-          "descripcion": "Recursos de otros profesores.",
-          "externos": true,
-          "materiales": [
-            { "tipo": "Guías", "titulo": "Aprendiendo Física con Berto Tomás", "enlace": "https://aprendiendofisicac.wixsite.com/my-site/gu%C3%ADas" },
-            { "tipo": "Apuntes", "titulo": "Fisiquímicamente: apuntes de Física de 2.º de Bachillerato", "enlace": "https://fisiquimicamente.com/recursos-fisica-quimica/apuntes/2bach/fisica/" },
-            { "tipo": "Resúmenes", "titulo": "Las chuletillas de Curro", "enlace": "https://drive.google.com/drive/folders/1OXSG4JKxRwPvIL4U-4N1LtcOyt4LIMmQ" }
-          ]
         }
       ]
     },

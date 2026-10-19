@@ -62,9 +62,15 @@ def secciones_visibles(curso):
 
 
 def numero_tema(seccion):
-    """Número que se muestra junto a la sección: solo en los temas a partir del 1 ("Tema 1: …" -> "01")."""
+    """Número que se muestra junto a la sección: solo en los temas ("Tema 0: …" -> "00", "Tema 1: …" -> "01")."""
     m = re.match(r"^Tema (\d+)\b", seccion["titulo"])
-    return "%02d" % int(m.group(1)) if m and int(m.group(1)) >= 1 else ""
+    return "%02d" % int(m.group(1)) if m else ""
+
+
+def alternas(curso):
+    """ids de las secciones propias que van con el segundo color (una sí, una no; los recursos externos no cuentan)."""
+    propias = [s["id"] for s in secciones_visibles(curso) if not s.get("externos")]
+    return set(propias[1::2])
 
 
 def contar(curso):
@@ -182,10 +188,11 @@ def cuenta(seccion):
     return ("%d %s" % (n, "material" if n == 1 else "materiales")) if n else "En construcción"
 
 
-def bloque(curso, seccion):
+def bloque(curso, seccion, alt=False):
     numero = numero_tema(seccion)
     num = '<span class="num">%s</span>' % numero if numero else ""
-    lineas = ['    <section class="bloque%s" id="%s">' % (" externos" if seccion.get("externos") else "", e(seccion["id"])),
+    clases = (" externos" if seccion.get("externos") else "") + (" alt" if alt else "")
+    lineas = ['    <section class="bloque%s" id="%s">' % (clases, e(seccion["id"])),
               '      <div class="cab">%s<div><h2>%s</h2><p class="cuenta">%s%s</p></div></div>'
               % (num, e(seccion["titulo"]), "Recursos de otras webs · " if seccion.get("externos") else "", cuenta(seccion))]
     if seccion.get("descripcion"):
@@ -202,9 +209,13 @@ def bloque(curso, seccion):
 
 def pagina_curso(sitio, cursos, curso):
     secciones = secciones_visibles(curso)
+    alt = alternas(curso)
     indice = "\n".join(
         '        <li%s><a href="#%s">%s<span class="tt">%s</span></a></li>'
-        % ("" if numero_tema(s) else ' class="sin-num"', e(s["id"]),
+        % (' class="%s"' % " ".join(c for c in ("" if numero_tema(s) else "sin-num",
+                                                 "externos" if s.get("externos") else "",
+                                                 "alt" if s["id"] in alt else "") if c) if (not numero_tema(s) or s.get("externos") or s["id"] in alt) else "",
+           e(s["id"]),
            '<span class="num">%s</span>' % numero_tema(s) if numero_tema(s) else "", e(s["titulo"]))
         for s in secciones)
     total = contar(curso)
@@ -229,7 +240,7 @@ def pagina_curso(sitio, cursos, curso):
   </div>
 </main>""".format(color=e(curso["color"]), nombre=e(curso["nombre"]), materia=e(curso["materia"]), total=total,
                   nsec=len(secciones), indice=indice,
-                  bloques="\n".join(bloque(curso, s) for s in secciones))
+                  bloques="\n".join(bloque(curso, s, s["id"] in alt) for s in secciones))
     titulo = "%s | %s" % (curso["nombre"], sitio["titulo"])
     return pagina(sitio, cursos, titulo, curso["id"], cuerpo)
 

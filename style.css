@@ -126,7 +126,6 @@ main.pag-curso { --a: var(--c); display: grid; grid-template-columns: 15rem 1fr;
 .pag-curso .indice .num { font-weight: 700; color: var(--a); font-variant-numeric: tabular-nums; }
 
 .pag-curso .bloque { padding: 1.75rem 1.5rem 1.5rem; margin: 0 0 1.25rem; border-radius: 12px; scroll-margin-top: 1rem; background: var(--paper); border: 2px solid color-mix(in srgb, var(--ink) 12%, transparent); }
-.pag-curso .bloque:nth-child(even) { background: color-mix(in srgb, var(--a) 7%, var(--paper)); border-color: transparent; }
 .pag-curso .bloque.externos { border-style: dashed; background: var(--paper); }
 .pag-curso .cab { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 1rem; }
 .pag-curso .cab .num { font: 800 2.6rem/1 var(--display); color: var(--a); font-variant-numeric: tabular-nums; }
@@ -172,11 +171,28 @@ main.pag-curso.bach2 { --a: var(--bach2); } main.pag-curso.fpb { --a: var(--fpb)
 /* Páginas de curso: bloques alternando el color del curso y un segundo color, ambos muy suaves */
 main.pag-curso { --b: var(--eso); }
 main.pag-curso.eso { --b: var(--bach2); }
-.pag-curso .bloque:nth-child(odd), .pag-curso .bloque:nth-child(even) {
+.pag-curso .bloque {
   background: color-mix(in srgb, var(--a) 7%, var(--paper));
   border: 2px solid color-mix(in srgb, var(--a) 22%, transparent);
 }
-.pag-curso .bloque:nth-child(even) { --a: var(--b); }
+.pag-curso .bloque.alt { --a: var(--b); }
 .pag-curso .bloque.externos { background: var(--paper); border-style: dashed; }
-.pag-curso .indice li:nth-child(even) .num { color: var(--b); }
-.pag-curso .indice li:nth-child(even) a:hover { border-left-color: var(--b); color: var(--b); }
+.pag-curso .indice li.alt .num { color: var(--b); }
+.pag-curso .indice li.alt a:hover { border-left-color: var(--b); color: var(--b); }
+
+/* Recursos de otros profesores: bloque discreto, en pequeño */
+.pag-curso .bloque.externos { padding: .9rem 1.1rem .8rem; margin-top: -.5rem; background: transparent; border: 1.5px dashed color-mix(in srgb, var(--ink) 18%, transparent); }
+.pag-curso .bloque.externos .cab { margin-bottom: .5rem; }
+.pag-curso .bloque.externos h2 { font-size: .95rem; color: var(--ink-soft); }
+.pag-curso .bloque.externos .cuenta, .pag-curso .bloque.externos .desc { display: none; }
+.pag-curso .bloque.externos .lista { display: flex; flex-wrap: wrap; gap: .4rem .6rem; }
+.pag-curso .bloque.externos .lista a {
+  display: inline-flex; gap: .5rem; align-items: baseline; padding: .3rem .65rem; font-size: .85rem;
+  background: transparent; border: 1px solid color-mix(in srgb, var(--ink) 15%, transparent); border-radius: 8px;
+}
+.pag-curso .bloque.externos .lista a:hover { transform: none; border-color: var(--ink-soft); }
+.pag-curso .bloque.externos .tipo { font-size: .68rem; color: var(--ink-soft); }
+.pag-curso .bloque.externos .t { font-weight: 600; }
+.pag-curso .bloque.externos .marca { border: 0; padding: 0; font-size: .8rem; color: var(--ink-soft); }
+.pag-curso .indice li.externos a { font-size: .8rem; color: var(--ink-soft); padding-left: 1.4rem; }
+@media (max-width: 34rem) { .pag-curso .bloque.externos .lista a { grid-template-columns: none; } }

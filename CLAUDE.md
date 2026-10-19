@@ -104,8 +104,9 @@ Las páginas HTML **no se editan a mano**: se generan a partir de un único arch
 - **Páginas de curso (diseño aprobado el 2026-10-16):** solo 3 colores —fondo, texto y el color del curso como único
   acento— porque Jorge no quiere que «parezca una feria». Banda de color con nombre y resumen, índice lateral fijo
   con las secciones (en móvil, botones), cada sección en un bloque con fondos alternos. **Número grande solo en los
-  temas a partir del 1 y coincidiendo con el tema** («Tema 1» → 01; Jorge lo pidió así: sin número en «Apuntes y
-  ejercicios», «Tema 0», recursos externos, etc.). Sale solo del título «Tema N: …»; materiales en filas (tipo · título · «PDF» o «Web ↗») y recursos externos con borde discontinuo.
+  temas, coincidiendo con el tema** («Tema 0» → 00, «Tema 1» → 01; sin número en «Apuntes y ejercicios», recursos
+  externos, etc.). Los recursos de otros profesores (`"externos"`) van justo debajo de «Apuntes y ejercicios», en
+  pequeño y discretos (enlaces como botones pequeños), y no cuentan para alternar colores. Sale solo del título «Tema N: …»; materiales en filas (tipo · título · «PDF» o «Web ↗») y recursos externos con borde discontinuo.
   Los bloques alternan el color del curso y un segundo color (verde; violeta en 2.º ESO), muy suaves.
   No añadir más colores por sección ni por tipo de material.
 - **Portada:** cada curso con un color distinto (Jorge lo pidió así; descartó degradados en violeta, verde y amarillo).

@@ -15,7 +15,8 @@ Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pas
   Se descartaron antes una versión con un color por sección («parece una feria») y otra con fichas de colores.
 - Bloques de las páginas de curso alternando dos colores suaves (curso + verde/violeta). Portada: un color por
   curso (3.º ESO estrena terracota); se probaron y descartaron degradados violeta, verde y amarillo.
-- En las páginas de curso solo llevan número los temas desde el 1, y coincide con el tema (Tema 1 → 01).
+- En las páginas de curso solo llevan número los temas, y coincide con el tema (Tema 0 → 00, Tema 1 → 01).
+  «Otros resúmenes y formularios» va justo debajo de «Apuntes y ejercicios», en pequeño.
 - Casillas de la portada con número grande + etapa («2.º / Bachillerato»); ya no hay códigos tipo «2B».
 - Los 12 PDF de Jorge están alojados en la web (`pdf/<curso>/<tema>/`, 33,6 MB en total); ya no dependen de Google Drive.
   Solo los 3 recursos de otros profesores (2.º Bach, «Otros resúmenes y formularios») siguen siendo enlaces externos.
