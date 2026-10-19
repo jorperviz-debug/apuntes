@@ -13,7 +13,7 @@ Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pas
   FP Básica (la casilla abre directamente su PDF).
 - Páginas de curso rediseñadas el 2026-10-16 (aprobado por Jorge): 3 colores, índice lateral, secciones numeradas.
   Se descartaron antes una versión con un color por sección («parece una feria») y otra con fichas de colores.
-- Bloques de las páginas de curso alternando dos colores suaves (curso + verde/violeta). Portada: un color por
+- Bloques de las páginas de curso: secciones generales en verde y todos los temas en el color del curso (sin alternar). Portada: un color por
   curso (3.º ESO estrena terracota); se probaron y descartaron degradados violeta, verde y amarillo.
 - En las páginas de curso solo llevan número los temas, y coincide con el tema (Tema 0 → 00, Tema 1 → 01).
   «Otros resúmenes y formularios» va justo debajo de «Apuntes y ejercicios», en pequeño.

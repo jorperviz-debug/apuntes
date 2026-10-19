@@ -47,3 +47,7 @@
 ## 2026-10-19 — MacBook Air de Jorge
 - Hecho: el Tema 0 lleva número (00); «Otros resúmenes y formularios» sube bajo «Apuntes y ejercicios» con un estilo pequeño y discreto (aprobado por Jorge).
 - A medias: soluciones del boletín de clase ocultas a la espera de activación; preparar el segundo Mac.
+
+## 2026-10-19 — MacBook Air de Jorge
+- Hecho: colores de las páginas de curso: secciones generales («Apuntes y ejercicios», «Otros resúmenes»…) en verde y todos los temas en el color del curso (aprobado por Jorge).
+- A medias: soluciones del boletín de clase ocultas a la espera de activación; preparar el segundo Mac.

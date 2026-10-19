@@ -68,9 +68,8 @@ def numero_tema(seccion):
 
 
 def alternas(curso):
-    """ids de las secciones propias que van con el segundo color (una sí, una no; los recursos externos no cuentan)."""
-    propias = [s["id"] for s in secciones_visibles(curso) if not s.get("externos")]
-    return set(propias[1::2])
+    """ids de las secciones que van con el segundo color: las generales (todo lo que no es un «Tema N»)."""
+    return {s["id"] for s in secciones_visibles(curso) if not numero_tema(s)}
 
 
 def contar(curso):

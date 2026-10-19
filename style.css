@@ -170,7 +170,6 @@ main.pag-curso.bach2 { --a: var(--bach2); } main.pag-curso.fpb { --a: var(--fpb)
 
 /* Páginas de curso: bloques alternando el color del curso y un segundo color, ambos muy suaves */
 main.pag-curso { --b: var(--eso); }
-main.pag-curso.eso { --b: var(--bach2); }
 .pag-curso .bloque {
   background: color-mix(in srgb, var(--a) 7%, var(--paper));
   border: 2px solid color-mix(in srgb, var(--a) 22%, transparent);
@@ -196,3 +195,12 @@ main.pag-curso.eso { --b: var(--bach2); }
 .pag-curso .bloque.externos .marca { border: 0; padding: 0; font-size: .8rem; color: var(--ink-soft); }
 .pag-curso .indice li.externos a { font-size: .8rem; color: var(--ink-soft); padding-left: 1.4rem; }
 @media (max-width: 34rem) { .pag-curso .bloque.externos .lista a { grid-template-columns: none; } }
+
+/* Secciones generales (todo lo que no es un «Tema N») en verde, también los recursos externos */
+.pag-curso .bloque.externos.alt { background: color-mix(in srgb, var(--a) 5%, transparent); border-color: color-mix(in srgb, var(--a) 40%, transparent); }
+.pag-curso .bloque.externos.alt h2, .pag-curso .bloque.externos.alt .tipo, .pag-curso .bloque.externos.alt .marca { color: var(--a); }
+.pag-curso .bloque.externos.alt .lista a { border-color: color-mix(in srgb, var(--a) 30%, transparent); }
+.pag-curso .bloque.externos.alt .lista a:hover { border-color: var(--a); }
+.pag-curso .indice li.alt a { color: var(--b); }
+.pag-curso .indice li.alt.externos a { color: color-mix(in srgb, var(--b) 75%, var(--ink-soft)); }
+
