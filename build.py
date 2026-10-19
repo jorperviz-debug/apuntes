@@ -7,6 +7,7 @@ GitHub lo ejecuta automáticamente en cada subida (.github/workflows/pages.yml).
 Solo usa la biblioteca estándar de Python (3.9 o posterior).
 """
 import json
+import re
 import shutil
 import sys
 from html import escape
@@ -55,8 +56,19 @@ def visibles(seccion):
     return [m for m in seccion["materiales"] if not m.get("oculto")]
 
 
+def secciones_visibles(curso):
+    """Secciones que se publican: las que tienen "oculto": true se saltan enteras."""
+    return [s for s in curso["secciones"] if not s.get("oculto")]
+
+
+def numero_tema(seccion):
+    """Número que se muestra junto a la sección: solo en los temas a partir del 1 ("Tema 1: …" -> "01")."""
+    m = re.match(r"^Tema (\d+)\b", seccion["titulo"])
+    return "%02d" % int(m.group(1)) if m and int(m.group(1)) >= 1 else ""
+
+
 def contar(curso):
-    return sum(len(visibles(s)) for s in curso["secciones"] if not s.get("externos"))
+    return sum(len(visibles(s)) for s in secciones_visibles(curso) if not s.get("externos"))
 
 
 # ---------- Plantilla común ----------
@@ -170,10 +182,12 @@ def cuenta(seccion):
     return ("%d %s" % (n, "material" if n == 1 else "materiales")) if n else "En construcción"
 
 
-def bloque(curso, seccion, numero):
+def bloque(curso, seccion):
+    numero = numero_tema(seccion)
+    num = '<span class="num">%s</span>' % numero if numero else ""
     lineas = ['    <section class="bloque%s" id="%s">' % (" externos" if seccion.get("externos") else "", e(seccion["id"])),
-              '      <div class="cab"><span class="num">%02d</span><div><h2>%s</h2><p class="cuenta">%s%s</p></div></div>'
-              % (numero, e(seccion["titulo"]), "Recursos de otras webs · " if seccion.get("externos") else "", cuenta(seccion))]
+              '      <div class="cab">%s<div><h2>%s</h2><p class="cuenta">%s%s</p></div></div>'
+              % (num, e(seccion["titulo"]), "Recursos de otras webs · " if seccion.get("externos") else "", cuenta(seccion))]
     if seccion.get("descripcion"):
         lineas.append('      <p class="desc">%s</p>' % e(seccion["descripcion"]))
     if visibles(seccion):
@@ -187,9 +201,12 @@ def bloque(curso, seccion, numero):
 
 
 def pagina_curso(sitio, cursos, curso):
-    secciones = curso["secciones"]
-    indice = "\n".join('        <li><a href="#%s"><span class="num">%02d</span><span class="tt">%s</span></a></li>' % (e(s["id"]), i, e(s["titulo"]))
-                       for i, s in enumerate(secciones, 1))
+    secciones = secciones_visibles(curso)
+    indice = "\n".join(
+        '        <li%s><a href="#%s">%s<span class="tt">%s</span></a></li>'
+        % ("" if numero_tema(s) else ' class="sin-num"', e(s["id"]),
+           '<span class="num">%s</span>' % numero_tema(s) if numero_tema(s) else "", e(s["titulo"]))
+        for s in secciones)
     total = contar(curso)
     cuerpo = """<div class="banda {color}">
   <div class="wrap">
@@ -212,7 +229,7 @@ def pagina_curso(sitio, cursos, curso):
   </div>
 </main>""".format(color=e(curso["color"]), nombre=e(curso["nombre"]), materia=e(curso["materia"]), total=total,
                   nsec=len(secciones), indice=indice,
-                  bloques="\n".join(bloque(curso, s, i) for i, s in enumerate(secciones, 1)))
+                  bloques="\n".join(bloque(curso, s) for s in secciones))
     titulo = "%s | %s" % (curso["nombre"], sitio["titulo"])
     return pagina(sitio, cursos, titulo, curso["id"], cuerpo)
 

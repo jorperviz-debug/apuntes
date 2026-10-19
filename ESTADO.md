@@ -8,12 +8,14 @@ Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pas
 - Web publicada en https://jorperviz-debug.github.io/apuntes/ (repositorio público `jorperviz-debug/apuntes`).
 - Las páginas se generan desde `cursos.json` con `build.py`; GitHub las publica solo en cada push a `main`.
 - Ejercicios de campo gravitatorio (2.º Bach) actualizados a la versión 2 el 2026-10-03; los de campo electromagnético siguen con «Sin actualizar».
-- Cursos: 2.º ESO (3 materiales), 3.º ESO (4, tema 1), 1.º Bachillerato (próximamente), 2.º Bachillerato (12 visibles; tema 1: problemas PAU de clase y de casa, soluciones de casa y examen PAU),
+- Cursos: 2.º ESO (3 materiales), 3.º ESO (4, tema 1), 1.º Bachillerato (próximamente), 2.º Bachillerato (11 visibles; tema 1: problemas PAU de clase y de casa + soluciones de casa; quitado el examen de
+  Galicia; sección «Repaso» oculta de momento),
   FP Básica (la casilla abre directamente su PDF).
 - Páginas de curso rediseñadas el 2026-10-16 (aprobado por Jorge): 3 colores, índice lateral, secciones numeradas.
   Se descartaron antes una versión con un color por sección («parece una feria») y otra con fichas de colores.
 - Bloques de las páginas de curso alternando dos colores suaves (curso + verde/violeta). Portada: un color por
   curso (3.º ESO estrena terracota); se probaron y descartaron degradados violeta, verde y amarillo.
+- En las páginas de curso solo llevan número los temas desde el 1, y coincide con el tema (Tema 1 → 01).
 - Casillas de la portada con número grande + etapa («2.º / Bachillerato»); ya no hay códigos tipo «2B».
 - Los 12 PDF de Jorge están alojados en la web (`pdf/<curso>/<tema>/`, 33,6 MB en total); ya no dependen de Google Drive.
   Solo los 3 recursos de otros profesores (2.º Bach, «Otros resúmenes y formularios») siguen siendo enlaces externos.

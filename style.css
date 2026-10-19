@@ -158,6 +158,7 @@ main.pag-curso .tipo { font-size: .78rem; font-weight: 700; text-transform: uppe
   .pag-curso .indice ol { display: flex; flex-wrap: wrap; gap: .4rem; border: 0; }
   .pag-curso .indice a { margin: 0; border: 1.5px solid color-mix(in srgb, var(--ink) 15%, transparent); border-radius: 999px; padding: .3rem .7rem; font-size: .85rem; }
   .pag-curso .indice .tt { display: none; }
+  .pag-curso .indice .sin-num .tt { display: inline-block; max-width: 15rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: bottom; }
 }
 @media (max-width: 34rem) {
   .pag-curso .bloque { padding: 1.25rem 1rem 1rem; }

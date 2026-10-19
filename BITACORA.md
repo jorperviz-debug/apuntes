@@ -39,3 +39,7 @@
 ## 2026-10-19 — MacBook Air de Jorge
 - Hecho: 2.º Bach, tema 1: boletín de problemas PAU para clase, boletín para casa y sus soluciones. Las soluciones del boletín de clase quedan ocultas (nueva opción `"oculto": true`; PDF en `privado/`, fuera de GitHub).
 - A medias: activar esas soluciones cuando Jorge lo diga; preparar el segundo Mac.
+
+## 2026-10-19 — MacBook Air de Jorge
+- Hecho: quitado el examen PAU de Galicia (2.º Bach, tema 1); la sección «Ejercicios y cuestiones de repaso» se oculta de momento; los números de sección ahora solo aparecen en los temas desde el 1 y coinciden con el tema.
+- A medias: soluciones del boletín de clase ocultas a la espera de activación; preparar el segundo Mac.

@@ -87,7 +87,8 @@ Las páginas HTML **no se editan a mano**: se generan a partir de un único arch
 
 - Cada material lleva `"archivo"` (PDF dentro de `pdf/<curso>/<seccion>/`) **o** `"enlace"` (URL externa, p. ej. Google Drive).
 - `"nota"` es opcional (texto pequeño a la derecha).
-- `"oculto": true` → el material **no se publica** ni cuenta en «N materiales» (p. ej. soluciones que Jorge activará
+- `"oculto": true` en una **sección** la quita de la web entera (sin borrar sus datos), p. ej. el repaso de 2.º Bach.
+- `"oculto": true` en un material → **no se publica** ni cuenta en «N materiales» (p. ej. soluciones que Jorge activará
   más tarde). Su PDF **no va en `pdf/`** sino en `privado/<curso>/<seccion>/`, que está en `.gitignore`: el repositorio
   es público y un PDF subido se podría encontrar aunque no salga en la web. Ese PDF solo existe en el Mac donde se
   guardó; si hay que activarlo desde el otro Mac, pedirle a Jorge que lo vuelva a pasar.
@@ -102,8 +103,9 @@ Las páginas HTML **no se editan a mano**: se generan a partir de un único arch
   pidió quitar los códigos tipo «2B» porque se confundían con grupos (2.º B): no volver a usar abreviaturas así.
 - **Páginas de curso (diseño aprobado el 2026-10-16):** solo 3 colores —fondo, texto y el color del curso como único
   acento— porque Jorge no quiere que «parezca una feria». Banda de color con nombre y resumen, índice lateral fijo
-  con las secciones numeradas (en móvil, botones con los números), cada sección en un bloque numerado (01, 02…) con
-  fondos alternos, materiales en filas (tipo · título · «PDF» o «Web ↗») y recursos externos con borde discontinuo.
+  con las secciones (en móvil, botones), cada sección en un bloque con fondos alternos. **Número grande solo en los
+  temas a partir del 1 y coincidiendo con el tema** («Tema 1» → 01; Jorge lo pidió así: sin número en «Apuntes y
+  ejercicios», «Tema 0», recursos externos, etc.). Sale solo del título «Tema N: …»; materiales en filas (tipo · título · «PDF» o «Web ↗») y recursos externos con borde discontinuo.
   Los bloques alternan el color del curso y un segundo color (verde; violeta en 2.º ESO), muy suaves.
   No añadir más colores por sección ni por tipo de material.
 - **Portada:** cada curso con un color distinto (Jorge lo pidió así; descartó degradados en violeta, verde y amarillo).
