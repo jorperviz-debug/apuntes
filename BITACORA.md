@@ -51,3 +51,7 @@
 ## 2026-10-19 — MacBook Air de Jorge
 - Hecho: colores de las páginas de curso: secciones generales («Apuntes y ejercicios», «Otros resúmenes»…) en verde y todos los temas en el color del curso (aprobado por Jorge).
 - A medias: soluciones del boletín de clase ocultas a la espera de activación; preparar el segundo Mac.
+
+## 2026-10-21 — MacBook Air de Jorge
+- Hecho: 2.º Bach, tema 1: añadidas las «Demostraciones del tema de gravitación» (8 demostraciones, 2 páginas), primeras del tema.
+- A medias: soluciones del boletín de clase ocultas a la espera de activación; preparar el segundo Mac.

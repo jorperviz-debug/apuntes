@@ -107,6 +107,7 @@
           "id": "tema-1",
           "titulo": "Tema 1: Campo gravitatorio. Materiales adicionales",
           "materiales": [
+            { "tipo": "Demostraciones", "titulo": "Demostraciones del tema de gravitación", "archivo": "demostraciones-gravitacion.pdf" },
             { "tipo": "Ejercicios", "titulo": "Problemas tipo PAU", "nota": "Para clase", "archivo": "problemas-pau-clase.pdf" },
             { "tipo": "Soluciones", "titulo": "Problemas tipo PAU", "nota": "Para clase", "archivo": "soluciones-problemas-pau-clase.pdf", "oculto": true },
             { "tipo": "Ejercicios", "titulo": "Problemas tipo PAU", "nota": "Para casa", "archivo": "problemas-pau-casa.pdf" },
