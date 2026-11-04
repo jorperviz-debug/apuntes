@@ -73,15 +73,6 @@
       "color": "bach2",
       "secciones": [
         {
-          "id": "apuntes-y-ejercicios",
-          "titulo": "Apuntes y ejercicios de la asignatura",
-          "materiales": [
-            { "tipo": "Apuntes", "titulo": "Apuntes de campo gravitatorio", "archivo": "apuntes-campo-gravitatorio.pdf" },
-            { "tipo": "Ejercicios", "titulo": "Colección de ejercicios de nivel PAU", "archivo": "ejercicios-campo-gravitatorio.pdf" },
-            { "tipo": "Soluciones", "titulo": "Soluciones de la colección", "archivo": "soluciones-campo-gravitatorio.pdf", "oculto": true }
-          ]
-        },
-        {
           "id": "otros-recursos",
           "titulo": "Otros resúmenes y formularios",
           "descripcion": "Recursos de otros profesores.",
@@ -106,7 +97,10 @@
           "id": "tema-1",
           "titulo": "Bloque 1: Campo gravitatorio",
           "materiales": [
+            { "tipo": "Apuntes", "titulo": "Apuntes", "archivo": "apuntes-campo-gravitatorio.pdf" },
             { "tipo": "Demostraciones", "titulo": "Demostraciones", "archivo": "demostraciones-gravitacion.pdf" },
+            { "tipo": "Ejercicios", "titulo": "Colección de ejercicios de nivel PAU", "archivo": "ejercicios-campo-gravitatorio.pdf" },
+            { "tipo": "Soluciones", "titulo": "Soluciones de la colección", "archivo": "soluciones-campo-gravitatorio.pdf", "oculto": true },
             { "tipo": "Ejercicios", "titulo": "Boletín de clase", "archivo": "problemas-pau-clase.pdf" },
             { "tipo": "Soluciones", "titulo": "Soluciones del boletín de clase", "archivo": "soluciones-problemas-pau-clase.pdf", "oculto": true },
             { "tipo": "Ejercicios", "titulo": "Ejercicios para casa", "archivo": "problemas-pau-casa.pdf" },

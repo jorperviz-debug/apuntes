@@ -204,3 +204,4 @@ main.pag-curso { --b: var(--eso); }
 .pag-curso .indice li.alt a { color: var(--b); }
 .pag-curso .indice li.alt.externos a { color: color-mix(in srgb, var(--b) 75%, var(--ink-soft)); }
 
+.pag-curso .bloque.externos:first-child { margin-top: 0; }

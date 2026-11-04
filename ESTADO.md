@@ -17,14 +17,14 @@ Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pas
 - Bloques de las páginas de curso: secciones generales en verde y todos los temas en el color del curso (sin alternar). Portada: un color por
   curso (3.º ESO estrena terracota); se probaron y descartaron degradados violeta, verde y amarillo.
 - En las páginas de curso solo llevan número los temas, y coincide con el tema (Tema 0 → 00, Tema 1 → 01).
-  «Otros resúmenes y formularios» va justo debajo de «Apuntes y ejercicios», en pequeño.
+  En 2.º Bach ya no hay «Apuntes y ejercicios»: cada bloque lleva sus apuntes y ejercicios; «Otros resúmenes» va el primero, en pequeño.
 - Casillas de la portada con número grande + etapa («2.º / Bachillerato»); ya no hay códigos tipo «2B».
 - Los 12 PDF de Jorge están alojados en la web (`pdf/<curso>/<tema>/`, 33,6 MB en total); ya no dependen de Google Drive.
   Solo los 3 recursos de otros profesores (2.º Bach, «Otros resúmenes y formularios») siguen siendo enlaces externos.
 
 ## Pendiente
 - **Soluciones OCULTAS** de «Campo gravitatorio» (soluciones desarrolladas de la colección de 42 ejercicios, en
-  «Apuntes y ejercicios»): esperan a que Jorge diga «actívalas». PDF SOLO en este Mac, en `privado/2-bachillerato/apuntes-y-ejercicios/`.
+  ahora en el Bloque 1): esperan a que Jorge diga «actívalas». PDF SOLO en este Mac, en `privado/2-bachillerato/tema-1/` (ahora van en el Bloque 1).
 - **Soluciones OCULTAS** de «Problemas tipo PAU · Para clase» (2.º Bach, tema 1): esperan a que Jorge diga «actívalas».
   El PDF está SOLO en este MacBook Air, en `privado/2-bachillerato/tema-1/` (no está en GitHub).
 - Preparar el segundo Mac (descargar la web desde GitHub, instalar `gh` e iniciar sesión).
