@@ -83,3 +83,7 @@
 ## 2026-11-04 — MacBook Air de Jorge
 - Hecho: Bloque 1 reordenado y renombrado según Jorge: Apuntes Campo Gravitatorio, Ejercicios Campo Gravitatorio, Boletín ejercicios tipo PAU para clase, Boletín ejercicios tipo PAU para casa, Demostraciones (soluciones detrás de sus ejercicios). Bloque 2 con el mismo estilo (Apuntes/Ejercicios Electromagnetismo).
 - A medias: activar soluciones ocultas cuando Jorge lo diga; preparar el segundo Mac.
+
+## 2026-11-04 — MacBook Air de Jorge (cierre)
+- Hecho hoy: Bloque 2 Electromagnetismo; temas de 2.º Bach renombrados a bloques; quitada la sección general «Apuntes y ejercicios» (cada bloque lleva lo suyo); títulos y orden del Bloque 1 fijados por Jorge; soluciones de campo gravitatorio guardadas ocultas.
+- A medias: activar las dos soluciones ocultas del Bloque 1; preparar el segundo Mac.
