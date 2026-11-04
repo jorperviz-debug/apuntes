@@ -63,3 +63,7 @@
 ## 2026-11-04 — MacBook Air de Jorge
 - Hecho: corregido un malentendido: los PDF de Electromagnetismo se recuperaron de la Papelera y se publicaron en el Tema 2 (apuntes de 50 págs. y ejercicios de 13 págs., completos; nota indicando la parte de campo eléctrico).
 - A medias: decidir si se separa solo la parte de campo eléctrico; activar soluciones ocultas cuando Jorge lo diga; preparar el segundo Mac.
+
+## 2026-11-04 — MacBook Air de Jorge
+- Hecho: en 2.º Bach los temas pasan a llamarse bloques (Bloque 0 Introducción, Bloque 1 Campo gravitatorio, Bloque 2 Electromagnetismo); quitadas las notas de «campo eléctrico» y los antiguos «Campo electromagnético» de «Apuntes y ejercicios».
+- A medias: activar soluciones ocultas cuando Jorge lo diga; preparar el segundo Mac.

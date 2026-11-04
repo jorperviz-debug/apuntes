@@ -7,9 +7,10 @@ Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pas
 ## Estado actual
 - Web publicada en https://jorperviz-debug.github.io/apuntes/ (repositorio público `jorperviz-debug/apuntes`).
 - Las páginas se generan desde `cursos.json` con `build.py`; GitHub las publica solo en cada push a `main`.
-- Ejercicios de campo gravitatorio (2.º Bach) actualizados a la versión 2 el 2026-10-03; los de campo electromagnético siguen con «Sin actualizar».
+- Ejercicios de campo gravitatorio (2.º Bach) actualizados a la versión 2 el 2026-10-03.
 - Cursos: 2.º ESO (3 materiales), 3.º ESO (4, tema 1), 1.º Bachillerato (próximamente), 2.º Bachillerato (12 visibles; tema 1: demostraciones del tema, problemas PAU de clase y de casa + soluciones de casa; quitado el examen de
-  Galicia; Tema 2: Campo eléctrico con los apuntes y ejercicios completos de Electromagnetismo (la parte de campo eléctrico se indica en una nota); sección «Repaso» oculta de momento),
+  Galicia; secciones renombradas a «Bloque 0/1/2»; Bloque 2: Electromagnetismo con apuntes y ejercicios completos; quitados los
+  antiguos «Campo electromagnético» de «Apuntes y ejercicios»; sección «Repaso» oculta de momento),
   FP Básica (la casilla abre directamente su PDF).
 - Páginas de curso rediseñadas el 2026-10-16 (aprobado por Jorge): 3 colores, índice lateral, secciones numeradas.
   Se descartaron antes una versión con un color por sección («parece una feria») y otra con fichas de colores.
@@ -24,8 +25,6 @@ Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pas
 ## Pendiente
 - **Soluciones OCULTAS** de «Campo gravitatorio» (soluciones desarrolladas de la colección de 42 ejercicios, en
   «Apuntes y ejercicios»): esperan a que Jorge diga «actívalas». PDF SOLO en este Mac, en `privado/2-bachillerato/apuntes-y-ejercicios/`.
-- Tema 2: los PDF son del bloque entero de Electromagnetismo; si Jorge lo prefiere, separar solo la parte de campo
-  eléctrico (apuntes págs. 5-23, ejercicios págs. 3-6). Los antiguos «Campo electromagnético» de «Apuntes y ejercicios» siguen ahí.
 - **Soluciones OCULTAS** de «Problemas tipo PAU · Para clase» (2.º Bach, tema 1): esperan a que Jorge diga «actívalas».
   El PDF está SOLO en este MacBook Air, en `privado/2-bachillerato/tema-1/` (no está en GitHub).
 - Preparar el segundo Mac (descargar la web desde GitHub, instalar `gh` e iniciar sesión).

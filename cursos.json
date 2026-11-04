@@ -78,9 +78,7 @@
           "materiales": [
             { "tipo": "Apuntes", "titulo": "Campo gravitatorio", "archivo": "apuntes-campo-gravitatorio.pdf" },
             { "tipo": "Ejercicios", "titulo": "Campo gravitatorio", "archivo": "ejercicios-campo-gravitatorio.pdf" },
-            { "tipo": "Soluciones", "titulo": "Campo gravitatorio", "archivo": "soluciones-campo-gravitatorio.pdf", "oculto": true },
-            { "tipo": "Apuntes", "titulo": "Campo electromagnético", "archivo": "apuntes-campo-electromagnetico.pdf" },
-            { "tipo": "Ejercicios", "titulo": "Campo electromagnético", "nota": "Sin actualizar", "archivo": "ejercicios-campo-electromagnetico.pdf" }
+            { "tipo": "Soluciones", "titulo": "Campo gravitatorio", "archivo": "soluciones-campo-gravitatorio.pdf", "oculto": true }
           ]
         },
         {
@@ -96,7 +94,7 @@
         },
         {
           "id": "tema-0",
-          "titulo": "Tema 0: Introducción a la Física de 2.º de Bachillerato",
+          "titulo": "Bloque 0: Introducción a la Física de 2.º de Bachillerato",
           "materiales": [
             { "tipo": "Formulario", "titulo": "Formulario de Física de 1.º de Bachillerato", "archivo": "formulario-fisica-1-bachillerato.pdf" },
             { "tipo": "Presentación", "titulo": "Vectores", "archivo": "presentacion-vectores.pdf" },
@@ -106,7 +104,7 @@
         },
         {
           "id": "tema-1",
-          "titulo": "Tema 1: Campo gravitatorio. Materiales adicionales",
+          "titulo": "Bloque 1: Campo gravitatorio",
           "materiales": [
             { "tipo": "Demostraciones", "titulo": "Demostraciones del tema de gravitación", "archivo": "demostraciones-gravitacion.pdf" },
             { "tipo": "Ejercicios", "titulo": "Problemas tipo PAU", "nota": "Para clase", "archivo": "problemas-pau-clase.pdf" },
@@ -117,10 +115,10 @@
         },
         {
           "id": "tema-2",
-          "titulo": "Tema 2: Campo eléctrico",
+          "titulo": "Bloque 2: Electromagnetismo",
           "materiales": [
-            { "tipo": "Apuntes", "titulo": "Electromagnetismo", "nota": "Campo eléctrico: apartados 1 a 8", "archivo": "apuntes-electromagnetismo.pdf" },
-            { "tipo": "Ejercicios", "titulo": "Electromagnetismo", "nota": "Campo eléctrico: parte I", "archivo": "ejercicios-electromagnetismo.pdf" }
+            { "tipo": "Apuntes", "titulo": "Electromagnetismo", "archivo": "apuntes-electromagnetismo.pdf" },
+            { "tipo": "Ejercicios", "titulo": "Electromagnetismo", "archivo": "ejercicios-electromagnetismo.pdf" }
           ]
         },
         {

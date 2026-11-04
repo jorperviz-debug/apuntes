@@ -62,8 +62,8 @@ def secciones_visibles(curso):
 
 
 def numero_tema(seccion):
-    """Número que se muestra junto a la sección: solo en los temas ("Tema 0: …" -> "00", "Tema 1: …" -> "01")."""
-    m = re.match(r"^Tema (\d+)\b", seccion["titulo"])
+    """Número junto a la sección: solo en temas o bloques ("Tema 0: …" -> "00", "Bloque 1: …" -> "01")."""
+    m = re.match(r"^(?:Tema|Bloque) (\d+)\b", seccion["titulo"])
     return "%02d" % int(m.group(1)) if m else ""
 
 

@@ -104,9 +104,10 @@ Las páginas HTML **no se editan a mano**: se generan a partir de un único arch
 - **Páginas de curso (diseño aprobado el 2026-10-16):** solo 3 colores —fondo, texto y el color del curso como único
   acento— porque Jorge no quiere que «parezca una feria». Banda de color con nombre y resumen, índice lateral fijo
   con las secciones (en móvil, botones), cada sección en un bloque con fondos alternos. **Número grande solo en los
-  temas, coincidiendo con el tema** («Tema 0» → 00, «Tema 1» → 01; sin número en «Apuntes y ejercicios», recursos
+  temas o bloques, coincidiendo con su número** («Tema 0» → 00, «Bloque 1» → 01; sin número en «Apuntes y ejercicios», recursos
   externos, etc.). Los recursos de otros profesores (`"externos"`) van justo debajo de «Apuntes y ejercicios», en
-  pequeño y discretos (enlaces como botones pequeños), también en verde. Sale solo del título «Tema N: …»; materiales en filas (tipo · título · «PDF» o «Web ↗») y recursos externos con borde discontinuo.
+  pequeño y discretos (enlaces como botones pequeños), también en verde. Sale solo del título «Tema N: …» o «Bloque N: …». **En 2.º Bach las secciones se llaman «Bloque N»** (Jorge lo pidió:
+  Bloque 0 Introducción, Bloque 1 Campo gravitatorio, Bloque 2 Electromagnetismo…); los ids siguen siendo `tema-N`; materiales en filas (tipo · título · «PDF» o «Web ↗») y recursos externos con borde discontinuo.
   **Colores de los bloques (aprobado 2026-10-19):** las secciones generales (todo lo que no es «Tema N»: «Apuntes y
   ejercicios», recursos externos, recuperaciones…) van en verde; **todos los temas en el color del curso**, sin alternar.
   No añadir más colores por sección ni por tipo de material.
