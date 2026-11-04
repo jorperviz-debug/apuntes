@@ -95,9 +95,12 @@ Las páginas HTML **no se editan a mano**: se generan a partir de un único arch
   **Activar** («activa las soluciones de…»): mover el PDF de `privado/…` a `pdf/…` (misma ruta), quitar
   `"oculto": true` de su entrada, `python3 build.py`, commit, push y comprobar.
 - Una sección con `"materiales": []` muestra «Pendiente · En construcción».
-- **Títulos de los materiales (Jorge, 2026-11-04):** sencillos y distintos entre sí: «Apuntes», «Boletín de clase»,
-  «Ejercicios para casa», «Soluciones del boletín de clase», «Soluciones de los ejercicios para casa», «Demostraciones»…
-  No repetir el mismo título con notas tipo «Para clase/Para casa».
+- **Títulos de los materiales (Jorge, 2026-11-04).** En cada bloque hay tres clases de ejercicios, cada una con su
+  título y seguida de sus soluciones: **«Ejercicios de los apuntes»** (la colección que acompaña a los apuntes, ordenada
+  por apartados), **«Boletín de clase tipo PAU»** y **«Boletín PAU para casa»**. Soluciones: «Soluciones de los
+  ejercicios de los apuntes», «Soluciones del boletín de clase tipo PAU», «Soluciones del boletín PAU para casa».
+  Además «Apuntes» y «Demostraciones». Orden: Apuntes, Demostraciones, Ejercicios de los apuntes (+sol.), Boletín de
+  clase (+sol.), Boletín para casa (+sol.). No repetir el mismo título con notas tipo «Para clase/Para casa».
 - Tipos usados: Apuntes, Ejercicios, Soluciones, Presentación, Formulario, Guías, Resúmenes. Se puede usar otro (Examen, Práctica…).
 - Cursos especiales: `"proximamente": true` muestra la casilla en gris sin página; un curso con `"enlace"` o `"archivo"`
   a nivel de curso (como FP Básica) no tiene página: la casilla abre directamente ese PDF (`pdf/<curso>/<archivo>`).

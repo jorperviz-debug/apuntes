@@ -75,3 +75,7 @@
 ## 2026-11-04 — MacBook Air de Jorge
 - Hecho: en 2.º Bach se elimina la sección «Apuntes y ejercicios de la asignatura»; los apuntes y la colección de ejercicios de campo gravitatorio (y sus soluciones ocultas) pasan al Bloque 1.
 - A medias: activar soluciones ocultas cuando Jorge lo diga; preparar el segundo Mac.
+
+## 2026-11-04 — MacBook Air de Jorge
+- Hecho: títulos según las tres clases de ejercicios de Jorge: «Ejercicios de los apuntes», «Boletín de clase tipo PAU», «Boletín PAU para casa» (cada uno con sus soluciones detrás). Lo de Electromagnetismo pasa a «Ejercicios de los apuntes».
+- A medias: activar soluciones ocultas cuando Jorge lo diga; preparar el segundo Mac.

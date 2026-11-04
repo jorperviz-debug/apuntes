@@ -99,12 +99,12 @@
           "materiales": [
             { "tipo": "Apuntes", "titulo": "Apuntes", "archivo": "apuntes-campo-gravitatorio.pdf" },
             { "tipo": "Demostraciones", "titulo": "Demostraciones", "archivo": "demostraciones-gravitacion.pdf" },
-            { "tipo": "Ejercicios", "titulo": "Colección de ejercicios de nivel PAU", "archivo": "ejercicios-campo-gravitatorio.pdf" },
-            { "tipo": "Soluciones", "titulo": "Soluciones de la colección", "archivo": "soluciones-campo-gravitatorio.pdf", "oculto": true },
-            { "tipo": "Ejercicios", "titulo": "Boletín de clase", "archivo": "problemas-pau-clase.pdf" },
-            { "tipo": "Soluciones", "titulo": "Soluciones del boletín de clase", "archivo": "soluciones-problemas-pau-clase.pdf", "oculto": true },
-            { "tipo": "Ejercicios", "titulo": "Ejercicios para casa", "archivo": "problemas-pau-casa.pdf" },
-            { "tipo": "Soluciones", "titulo": "Soluciones de los ejercicios para casa", "archivo": "soluciones-problemas-pau-casa.pdf" }
+            { "tipo": "Ejercicios", "titulo": "Ejercicios de los apuntes", "archivo": "ejercicios-campo-gravitatorio.pdf" },
+            { "tipo": "Soluciones", "titulo": "Soluciones de los ejercicios de los apuntes", "archivo": "soluciones-campo-gravitatorio.pdf", "oculto": true },
+            { "tipo": "Ejercicios", "titulo": "Boletín de clase tipo PAU", "archivo": "problemas-pau-clase.pdf" },
+            { "tipo": "Soluciones", "titulo": "Soluciones del boletín de clase tipo PAU", "archivo": "soluciones-problemas-pau-clase.pdf", "oculto": true },
+            { "tipo": "Ejercicios", "titulo": "Boletín PAU para casa", "archivo": "problemas-pau-casa.pdf" },
+            { "tipo": "Soluciones", "titulo": "Soluciones del boletín PAU para casa", "archivo": "soluciones-problemas-pau-casa.pdf" }
           ]
         },
         {
@@ -112,7 +112,7 @@
           "titulo": "Bloque 2: Electromagnetismo",
           "materiales": [
             { "tipo": "Apuntes", "titulo": "Apuntes", "archivo": "apuntes-electromagnetismo.pdf" },
-            { "tipo": "Ejercicios", "titulo": "Boletín de clase", "archivo": "ejercicios-electromagnetismo.pdf" }
+            { "tipo": "Ejercicios", "titulo": "Ejercicios de los apuntes", "archivo": "ejercicios-electromagnetismo.pdf" }
           ]
         },
         {
