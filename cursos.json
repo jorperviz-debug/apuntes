@@ -118,7 +118,10 @@
         {
           "id": "tema-2",
           "titulo": "Tema 2: Campo eléctrico",
-          "materiales": []
+          "materiales": [
+            { "tipo": "Apuntes", "titulo": "Electromagnetismo", "nota": "Campo eléctrico: apartados 1 a 8", "archivo": "apuntes-electromagnetismo.pdf" },
+            { "tipo": "Ejercicios", "titulo": "Electromagnetismo", "nota": "Campo eléctrico: parte I", "archivo": "ejercicios-electromagnetismo.pdf" }
+          ]
         },
         {
           "id": "repaso",

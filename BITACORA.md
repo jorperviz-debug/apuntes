@@ -59,3 +59,7 @@
 ## 2026-11-04 — MacBook Air de Jorge
 - Hecho: creado en 2.º Bach el «Tema 2: Campo eléctrico» (vacío, «En construcción»). Guardadas como ocultas las soluciones desarrolladas de campo gravitatorio (en `privado/`). Los PDF de electromagnetismo que Jorge dejó se han mandado a la Papelera por petición suya.
 - A medias: activar las dos soluciones ocultas (boletín de clase del tema 1 y campo gravitatorio) cuando Jorge lo diga; materiales del tema 2; preparar el segundo Mac.
+
+## 2026-11-04 — MacBook Air de Jorge
+- Hecho: corregido un malentendido: los PDF de Electromagnetismo se recuperaron de la Papelera y se publicaron en el Tema 2 (apuntes de 50 págs. y ejercicios de 13 págs., completos; nota indicando la parte de campo eléctrico).
+- A medias: decidir si se separa solo la parte de campo eléctrico; activar soluciones ocultas cuando Jorge lo diga; preparar el segundo Mac.
