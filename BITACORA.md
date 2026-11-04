@@ -55,3 +55,7 @@
 ## 2026-10-21 — MacBook Air de Jorge
 - Hecho: 2.º Bach, tema 1: añadidas las «Demostraciones del tema de gravitación» (8 demostraciones, 2 páginas), primeras del tema.
 - A medias: soluciones del boletín de clase ocultas a la espera de activación; preparar el segundo Mac.
+
+## 2026-11-04 — MacBook Air de Jorge
+- Hecho: creado en 2.º Bach el «Tema 2: Campo eléctrico» (vacío, «En construcción»). Guardadas como ocultas las soluciones desarrolladas de campo gravitatorio (en `privado/`). Los PDF de electromagnetismo que Jorge dejó se han mandado a la Papelera por petición suya.
+- A medias: activar las dos soluciones ocultas (boletín de clase del tema 1 y campo gravitatorio) cuando Jorge lo diga; materiales del tema 2; preparar el segundo Mac.

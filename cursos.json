@@ -78,6 +78,7 @@
           "materiales": [
             { "tipo": "Apuntes", "titulo": "Campo gravitatorio", "archivo": "apuntes-campo-gravitatorio.pdf" },
             { "tipo": "Ejercicios", "titulo": "Campo gravitatorio", "archivo": "ejercicios-campo-gravitatorio.pdf" },
+            { "tipo": "Soluciones", "titulo": "Campo gravitatorio", "archivo": "soluciones-campo-gravitatorio.pdf", "oculto": true },
             { "tipo": "Apuntes", "titulo": "Campo electromagnético", "archivo": "apuntes-campo-electromagnetico.pdf" },
             { "tipo": "Ejercicios", "titulo": "Campo electromagnético", "nota": "Sin actualizar", "archivo": "ejercicios-campo-electromagnetico.pdf" }
           ]
@@ -113,6 +114,11 @@
             { "tipo": "Ejercicios", "titulo": "Problemas tipo PAU", "nota": "Para casa", "archivo": "problemas-pau-casa.pdf" },
             { "tipo": "Soluciones", "titulo": "Problemas tipo PAU", "nota": "Para casa", "archivo": "soluciones-problemas-pau-casa.pdf" }
           ]
+        },
+        {
+          "id": "tema-2",
+          "titulo": "Tema 2: Campo eléctrico",
+          "materiales": []
         },
         {
           "id": "repaso",
