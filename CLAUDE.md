@@ -95,12 +95,11 @@ Las páginas HTML **no se editan a mano**: se generan a partir de un único arch
   **Activar** («activa las soluciones de…»): mover el PDF de `privado/…` a `pdf/…` (misma ruta), quitar
   `"oculto": true` de su entrada, `python3 build.py`, commit, push y comprobar.
 - Una sección con `"materiales": []` muestra «Pendiente · En construcción».
-- **Títulos de los materiales (Jorge, 2026-11-04).** En cada bloque hay tres clases de ejercicios, cada una con su
-  título y seguida de sus soluciones: **«Ejercicios de los apuntes»** (la colección que acompaña a los apuntes, ordenada
-  por apartados), **«Boletín de clase tipo PAU»** y **«Boletín PAU para casa»**. Soluciones: «Soluciones de los
-  ejercicios de los apuntes», «Soluciones del boletín de clase tipo PAU», «Soluciones del boletín PAU para casa».
-  Además «Apuntes» y «Demostraciones». Orden: Apuntes, Demostraciones, Ejercicios de los apuntes (+sol.), Boletín de
-  clase (+sol.), Boletín para casa (+sol.). No repetir el mismo título con notas tipo «Para clase/Para casa».
+- **Títulos y orden de los materiales de cada bloque (Jorge, 2026-11-04), p. ej. Bloque 1:**
+  1) «Apuntes Campo Gravitatorio», 2) «Ejercicios Campo Gravitatorio» (los que acompañan a los apuntes),
+  3) «Boletín ejercicios tipo PAU para clase», 4) «Boletín ejercicios tipo PAU para casa», 5) «Demostraciones».
+  Cada soluciones va justo detrás de sus ejercicios: «Soluciones Ejercicios Campo Gravitatorio», «Soluciones boletín
+  ejercicios tipo PAU para clase/casa». En otros bloques, igual con su nombre (p. ej. «Apuntes Electromagnetismo»).
 - Tipos usados: Apuntes, Ejercicios, Soluciones, Presentación, Formulario, Guías, Resúmenes. Se puede usar otro (Examen, Práctica…).
 - Cursos especiales: `"proximamente": true` muestra la casilla en gris sin página; un curso con `"enlace"` o `"archivo"`
   a nivel de curso (como FP Básica) no tiene página: la casilla abre directamente ese PDF (`pdf/<curso>/<archivo>`).

@@ -79,3 +79,7 @@
 ## 2026-11-04 — MacBook Air de Jorge
 - Hecho: títulos según las tres clases de ejercicios de Jorge: «Ejercicios de los apuntes», «Boletín de clase tipo PAU», «Boletín PAU para casa» (cada uno con sus soluciones detrás). Lo de Electromagnetismo pasa a «Ejercicios de los apuntes».
 - A medias: activar soluciones ocultas cuando Jorge lo diga; preparar el segundo Mac.
+
+## 2026-11-04 — MacBook Air de Jorge
+- Hecho: Bloque 1 reordenado y renombrado según Jorge: Apuntes Campo Gravitatorio, Ejercicios Campo Gravitatorio, Boletín ejercicios tipo PAU para clase, Boletín ejercicios tipo PAU para casa, Demostraciones (soluciones detrás de sus ejercicios). Bloque 2 con el mismo estilo (Apuntes/Ejercicios Electromagnetismo).
+- A medias: activar soluciones ocultas cuando Jorge lo diga; preparar el segundo Mac.
