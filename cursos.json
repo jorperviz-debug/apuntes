@@ -76,9 +76,9 @@
           "id": "apuntes-y-ejercicios",
           "titulo": "Apuntes y ejercicios de la asignatura",
           "materiales": [
-            { "tipo": "Apuntes", "titulo": "Campo gravitatorio", "archivo": "apuntes-campo-gravitatorio.pdf" },
-            { "tipo": "Ejercicios", "titulo": "Campo gravitatorio", "archivo": "ejercicios-campo-gravitatorio.pdf" },
-            { "tipo": "Soluciones", "titulo": "Campo gravitatorio", "archivo": "soluciones-campo-gravitatorio.pdf", "oculto": true }
+            { "tipo": "Apuntes", "titulo": "Apuntes de campo gravitatorio", "archivo": "apuntes-campo-gravitatorio.pdf" },
+            { "tipo": "Ejercicios", "titulo": "Colección de ejercicios de nivel PAU", "archivo": "ejercicios-campo-gravitatorio.pdf" },
+            { "tipo": "Soluciones", "titulo": "Soluciones de la colección", "archivo": "soluciones-campo-gravitatorio.pdf", "oculto": true }
           ]
         },
         {
@@ -106,19 +106,19 @@
           "id": "tema-1",
           "titulo": "Bloque 1: Campo gravitatorio",
           "materiales": [
-            { "tipo": "Demostraciones", "titulo": "Demostraciones del tema de gravitación", "archivo": "demostraciones-gravitacion.pdf" },
-            { "tipo": "Ejercicios", "titulo": "Problemas tipo PAU", "nota": "Para clase", "archivo": "problemas-pau-clase.pdf" },
-            { "tipo": "Soluciones", "titulo": "Problemas tipo PAU", "nota": "Para clase", "archivo": "soluciones-problemas-pau-clase.pdf", "oculto": true },
-            { "tipo": "Ejercicios", "titulo": "Problemas tipo PAU", "nota": "Para casa", "archivo": "problemas-pau-casa.pdf" },
-            { "tipo": "Soluciones", "titulo": "Problemas tipo PAU", "nota": "Para casa", "archivo": "soluciones-problemas-pau-casa.pdf" }
+            { "tipo": "Demostraciones", "titulo": "Demostraciones", "archivo": "demostraciones-gravitacion.pdf" },
+            { "tipo": "Ejercicios", "titulo": "Boletín de clase", "archivo": "problemas-pau-clase.pdf" },
+            { "tipo": "Soluciones", "titulo": "Soluciones del boletín de clase", "archivo": "soluciones-problemas-pau-clase.pdf", "oculto": true },
+            { "tipo": "Ejercicios", "titulo": "Ejercicios para casa", "archivo": "problemas-pau-casa.pdf" },
+            { "tipo": "Soluciones", "titulo": "Soluciones de los ejercicios para casa", "archivo": "soluciones-problemas-pau-casa.pdf" }
           ]
         },
         {
           "id": "tema-2",
           "titulo": "Bloque 2: Electromagnetismo",
           "materiales": [
-            { "tipo": "Apuntes", "titulo": "Electromagnetismo", "archivo": "apuntes-electromagnetismo.pdf" },
-            { "tipo": "Ejercicios", "titulo": "Electromagnetismo", "archivo": "ejercicios-electromagnetismo.pdf" }
+            { "tipo": "Apuntes", "titulo": "Apuntes", "archivo": "apuntes-electromagnetismo.pdf" },
+            { "tipo": "Ejercicios", "titulo": "Boletín de clase", "archivo": "ejercicios-electromagnetismo.pdf" }
           ]
         },
         {

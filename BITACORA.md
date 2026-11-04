@@ -67,3 +67,7 @@
 ## 2026-11-04 — MacBook Air de Jorge
 - Hecho: en 2.º Bach los temas pasan a llamarse bloques (Bloque 0 Introducción, Bloque 1 Campo gravitatorio, Bloque 2 Electromagnetismo); quitadas las notas de «campo eléctrico» y los antiguos «Campo electromagnético» de «Apuntes y ejercicios».
 - A medias: activar soluciones ocultas cuando Jorge lo diga; preparar el segundo Mac.
+
+## 2026-11-04 — MacBook Air de Jorge
+- Hecho: títulos de los materiales de 2.º Bach renombrados para que no se repitan («Apuntes», «Boletín de clase», «Ejercicios para casa», sus soluciones, «Demostraciones», «Colección de ejercicios de nivel PAU»); quitadas las notas «Para clase/Para casa».
+- A medias: decidir si lo de gravitatorio de «Apuntes y ejercicios» pasa al Bloque 1; activar soluciones ocultas; preparar el segundo Mac.
