@@ -99,9 +99,9 @@
           "materiales": [
             { "tipo": "Apuntes", "titulo": "Apuntes Campo Gravitatorio", "archivo": "apuntes-campo-gravitatorio.pdf" },
             { "tipo": "Ejercicios", "titulo": "Ejercicios Campo Gravitatorio", "archivo": "ejercicios-campo-gravitatorio.pdf" },
-            { "tipo": "Soluciones", "titulo": "Soluciones Ejercicios Campo Gravitatorio", "archivo": "soluciones-campo-gravitatorio.pdf", "oculto": true },
+            { "tipo": "Soluciones", "titulo": "Soluciones Ejercicios Campo Gravitatorio", "archivo": "soluciones-campo-gravitatorio.pdf" },
             { "tipo": "Ejercicios", "titulo": "Boletín ejercicios tipo PAU para clase", "archivo": "problemas-pau-clase.pdf" },
-            { "tipo": "Soluciones", "titulo": "Soluciones boletín ejercicios tipo PAU para clase", "archivo": "soluciones-problemas-pau-clase.pdf", "oculto": true },
+            { "tipo": "Soluciones", "titulo": "Soluciones boletín ejercicios tipo PAU para clase", "archivo": "soluciones-problemas-pau-clase.pdf" },
             { "tipo": "Ejercicios", "titulo": "Boletín ejercicios tipo PAU para casa", "archivo": "problemas-pau-casa.pdf" },
             { "tipo": "Soluciones", "titulo": "Soluciones boletín ejercicios tipo PAU para casa", "archivo": "soluciones-problemas-pau-casa.pdf" },
             { "tipo": "Demostraciones", "titulo": "Demostraciones", "archivo": "demostraciones-gravitacion.pdf" }
@@ -112,7 +112,8 @@
           "titulo": "Bloque 2: Electromagnetismo",
           "materiales": [
             { "tipo": "Apuntes", "titulo": "Apuntes Electromagnetismo", "archivo": "apuntes-electromagnetismo.pdf" },
-            { "tipo": "Ejercicios", "titulo": "Ejercicios Electromagnetismo", "archivo": "ejercicios-electromagnetismo.pdf" }
+            { "tipo": "Ejercicios", "titulo": "Ejercicios Electromagnetismo", "archivo": "ejercicios-electromagnetismo.pdf" },
+            { "tipo": "Soluciones", "titulo": "Soluciones Ejercicios Electromagnetismo", "archivo": "soluciones-electromagnetismo.pdf" }
           ]
         },
         {
