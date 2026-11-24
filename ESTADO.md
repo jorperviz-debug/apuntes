@@ -1,5 +1,5 @@
 # Estado del proyecto
-Última actualización: 2026-11-18 — Mac: MacBook Air de Jorge
+Última actualización: 2026-11-24 — Mac: MacBook Air de Jorge
 
 ## Objetivo general
 Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pasando poco a poco los PDF de Google Drive al propio proyecto.
@@ -22,7 +22,6 @@ Mantener y ampliar la web de apuntes de Física y Química para mis alumnos, pas
 ## Pendiente
 - No hay nada oculto pendiente: el 2026-11-18 se activaron las dos soluciones del Bloque 1.
 - Preparar el segundo Mac (descargar la web desde GitHub, instalar `gh` e iniciar sesión).
-- Opcional: corregir en el PDF de demostraciones la fecha («October 9, 2025») y la errata «la la».
 - Opcional: Jorge puede dar permiso a Claude para leer iCloud Drive (Ajustes › Privacidad y seguridad) y así no
   tener que copiar los PDF a mano a la carpeta PaginaInstituto.
 

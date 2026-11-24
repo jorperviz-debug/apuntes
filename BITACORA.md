@@ -91,3 +91,7 @@
 ## 2026-11-18 — MacBook Air de Jorge
 - Hecho: activadas las dos soluciones ocultas del Bloque 1 (ejercicios de campo gravitatorio y boletín PAU de clase); añadidas y publicadas las «Soluciones Ejercicios Electromagnetismo» (14 págs.) en el Bloque 2.
 - A medias: preparar el segundo Mac.
+
+## 2026-11-24 — MacBook Air de Jorge
+- Hecho: sustituidas las «Demostraciones» del Bloque 1 de 2.º Bach por la versión nueva (sin fecha, errata «la la» corregida, velocidad de satelización corregida y nota «Ojo» en la velocidad de escape desde una órbita). La antigua queda solo en el historial de GitHub.
+- A medias: preparar el segundo Mac.
